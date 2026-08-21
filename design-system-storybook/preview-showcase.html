@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UEDP-5 Design System & Storybook Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- GA4 Integration -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MEASUREMENT_ID');
+  </script>
+  <style>
+    /* AUTO-GENERATED FIGMA CSS TOKENS */
+    :root {
+      --uedp-slate-50: #f8fafc;
+      --uedp-slate-100: #f1f5f9;
+      --uedp-slate-200: #e2e8f0;
+      --uedp-slate-300: #cbd5e1;
+      --uedp-slate-400: #94a3b8;
+      --uedp-slate-500: #64748b;
+      --uedp-slate-600: #475569;
+      --uedp-slate-700: #334155;
+      --uedp-slate-800: #1e293b;
+      --uedp-slate-900: #0f172a;
+      --uedp-slate-950: #020617;
+      --uedp-blue-50: #eff6ff;
+      --uedp-blue-100: #dbeafe;
+      --uedp-blue-200: #bfdbfe;
+      --uedp-blue-300: #93c5fd;
+      --uedp-blue-400: #60a5fa;
+      --uedp-blue-500: #3b82f6;
+      --uedp-blue-600: #2563eb;
+      --uedp-blue-700: #1d4ed8;
+      --uedp-blue-800: #1e40af;
+      --uedp-blue-900: #1e3a8a;
+      --uedp-indigo-500: #6366f1;
+      --uedp-indigo-600: #4f46e5;
+      --uedp-indigo-700: #4338ca;
+      --uedp-emerald-100: #d1fae5;
+      --uedp-emerald-500: #10b981;
+      --uedp-emerald-600: #059669;
+      --uedp-amber-100: #fef3c7;
+      --uedp-amber-500: #f59e0b;
+      --uedp-amber-600: #d97706;
+      --uedp-rose-100: #ffe4e6;
+      --uedp-rose-500: #f43f5e;
+      --uedp-rose-600: #e11d48;
+      --uedp-neutral-0: #ffffff;
+      --uedp-neutral-1000: #000000;
+
+      --uedp-rounded-none: 0px;
+      --uedp-rounded-sm: 4px;
+      --uedp-rounded-md: 8px;
+      --uedp-rounded-lg: 12px;
+      --uedp-rounded-xl: 16px;
+      --uedp-rounded-2xl: 20px;
+      --uedp-rounded-3xl: 24px;
+      --uedp-rounded-full: 9999px;
+
+      --uedp-gap-1: 4px;
+      --uedp-gap-2: 8px;
+      --uedp-gap-3: 12px;
+      --uedp-gap-4: 16px;
+      --uedp-gap-6: 24px;
+      --uedp-gap-8: 32px;
+      --uedp-gap-12: 48px;
+
+      --uedp-padding-1: 4px;
+      --uedp-padding-2: 8px;
+      --uedp-padding-3: 12px;
+      --uedp-padding-4: 16px;
+      --uedp-padding-6: 24px;
+      --uedp-padding-8: 32px;
+      --uedp-padding-12: 48px;
+
+      --uedp-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --uedp-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --uedp-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --uedp-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --uedp-fontFamily-sans: 'Inter', sans-serif;
+      --uedp-fontFamily-mono: 'Fira Code', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--uedp-fontFamily-sans);
+      background-color: var(--uedp-slate-50);
+      color: var(--uedp-slate-800);
+      line-height: 1.5;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #fff;
+      padding: 24px 32px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+    }
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      background: var(--uedp-blue-500);
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    nav {
+      background: #fff;
+      border-bottom: 1px solid var(--uedp-slate-200);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 32px;
+      display: flex;
+      gap: 12px;
+    }
+    .tab-btn {
+      padding: 14px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--uedp-slate-600);
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+    }
+    .tab-btn.active {
+      color: var(--uedp-blue-600);
+      border-bottom-color: var(--uedp-blue-600);
+    }
+
+    main {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+    .section { display: none; }
+    .section.active { display: block; }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--uedp-slate-200);
+      border-radius: var(--uedp-rounded-2xl);
+      box-shadow: var(--uedp-shadow-sm);
+      margin-bottom: 32px;
+      overflow: hidden;
+    }
+    .card-header {
+      padding: 16px 24px;
+      background: var(--uedp-slate-50);
+      border-bottom: 1px solid var(--uedp-slate-200);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--uedp-slate-900);
+    }
+    .node-badge {
+      font-family: var(--uedp-fontFamily-mono);
+      font-size: 11px;
+      background: #e0e7ff;
+      color: #3730a3;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    .card-body {
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-specs {
+      padding: 16px 24px;
+      background: #f8fafc;
+      border-top: 1px solid var(--uedp-slate-200);
+      font-size: 12px;
+    }
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .spec-table th, .spec-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .spec-table th { background: #f1f5f9; font-weight: 700; }
+    code {
+      font-family: var(--uedp-fontFamily-mono);
+      background: #e2e8f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #0f172a;
+    }
+
+    /* Component CSS: Button (Figma Node ID 4:30) */
+    .uedp-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--uedp-gap-2, 8px);
+      font-family: var(--uedp-fontFamily-sans, 'Inter', sans-serif);
+      font-weight: 600;
+      border-radius: var(--uedp-border-radius-rounded-md, 6px);
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+      user-select: none;
+      text-decoration: none;
+      outline: none;
+      box-sizing: border-box;
+    }
+    .uedp-btn:focus-visible {
+      outline: 2px solid var(--uedp-orange-600, #ea580c);
+      outline-offset: 2px;
+    }
+    /* Sizes */
+    .uedp-btn-xs { height: 28px; padding: 0 8px; font-size: 12px; border-radius: 4px; gap: 4px; }
+    .uedp-btn-sm { height: 32px; padding: 0 12px; font-size: 13px; border-radius: 6px; gap: 6px; }
+    .uedp-btn-md { height: 40px; padding: 0 16px; font-size: 14px; border-radius: 6px; gap: 8px; }
+    .uedp-btn-lg { height: 48px; padding: 0 24px; font-size: 16px; border-radius: 8px; gap: 10px; }
+
+    /* Variants */
+    .uedp-btn-primary {
+      background-color: var(--uedp-orange-600, #ea580c);
+      color: var(--uedp-base-white, #ffffff);
+      box-shadow: var(--uedp-shadow-sm, 0 1px 2px 0 rgba(0, 0, 0, 0.05));
+    }
+    .uedp-btn-primary:hover {
+      background-color: var(--uedp-orange-700, #c2410c);
+      transform: translateY(-1px);
+      box-shadow: var(--uedp-shadow-md, 0 4px 6px -1px rgba(0, 0, 0, 0.1));
+    }
+    .uedp-btn-primary:active { background-color: var(--uedp-orange-800, #9a3412); transform: translateY(0); }
+
+    .uedp-btn-secondary {
+      background-color: var(--uedp-neutral-100, #f5f5f5);
+      color: var(--uedp-neutral-900, #171717);
+      border-color: var(--uedp-neutral-200, #e5e5e5);
+    }
+    .uedp-btn-secondary:hover { background-color: var(--uedp-neutral-200, #e5e5e5); }
+    .uedp-btn-secondary:active { background-color: var(--uedp-neutral-300, #d4d4d4); }
+
+    .uedp-btn-outline {
+      background-color: transparent;
+      border-color: var(--uedp-neutral-300, #d4d4d4);
+      color: var(--uedp-neutral-800, #262626);
+    }
+    .uedp-btn-outline:hover {
+      background-color: var(--uedp-orange-50, #fff7ed);
+      border-color: var(--uedp-orange-600, #ea580c);
+      color: var(--uedp-orange-600, #ea580c);
+    }
+
+    .uedp-btn-ghost {
+      background-color: transparent;
+      color: var(--uedp-neutral-700, #404040);
+    }
+    .uedp-btn-ghost:hover { background-color: var(--uedp-neutral-100, #f5f5f5); color: var(--uedp-neutral-900, #171717); }
+
+    .uedp-btn-danger {
+      background-color: var(--uedp-red-600, #dc2626);
+      color: var(--uedp-base-white, #ffffff);
+    }
+    .uedp-btn-danger:hover { background-color: var(--uedp-red-700, #b91c1c); box-shadow: 0 4px 12px rgba(220, 38, 38, 0.25); }
+
+    .uedp-btn-link {
+      background-color: transparent;
+      color: var(--uedp-orange-600, #ea580c);
+      padding: 0;
+      height: auto;
+      border-radius: 0;
+    }
+    .uedp-btn-link:hover { text-decoration: underline; color: var(--uedp-orange-700, #c2410c); }
+
+    /* Component CSS: Component 336 / Card (Figma Node ID 32:580) */
+    .uedp-c336 {
+      background-color: var(--uedp-base-white, #ffffff);
+      border: 1px solid var(--uedp-neutral-200, #e5e5e5);
+      border-radius: var(--uedp-border-radius-rounded-2xl, 16px);
+      padding: var(--uedp-padding-p-6, 24px);
+      box-shadow: var(--uedp-shadow-sm, 0 1px 2px 0 rgba(0, 0, 0, 0.05));
+      font-family: var(--uedp-fontFamily-sans, 'Inter', sans-serif);
+      display: flex;
+      flex-direction: column;
+      gap: var(--uedp-gap-4, 16px);
+      width: 100%;
+      box-sizing: border-box;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .uedp-c336-elevated {
+      box-shadow: var(--uedp-shadow-md, 0 4px 6px -1px rgba(0, 0, 0, 0.1));
+    }
+    .uedp-c336-elevated:hover {
+      box-shadow: var(--uedp-shadow-lg, 0 10px 15px -3px rgba(0, 0, 0, 0.1));
+      transform: translateY(-2px);
+    }
+    .uedp-c336-brand {
+      border-top: 4px solid var(--uedp-orange-600, #ea580c);
+      box-shadow: var(--uedp-shadow-md, 0 4px 6px -1px rgba(0, 0, 0, 0.1));
+    }
+    .uedp-c336-brand:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--uedp-shadow-lg);
+    }
+    .uedp-c336-outlined {
+      border: 1px solid var(--uedp-neutral-300, #d4d4d4);
+      box-shadow: none;
+    }
+    .uedp-c336-filled {
+      background-color: var(--uedp-neutral-50, #fafafa);
+      box-shadow: none;
+    }
+    .uedp-c336-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .uedp-c336-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .uedp-c336-icon-orange { background: var(--uedp-orange-50, #fff7ed); color: var(--uedp-orange-600, #ea580c); }
+    .uedp-c336-icon-green { background: var(--uedp-green-50, #f0fdf4); color: var(--uedp-green-600, #16a34a); }
+    .uedp-c336-icon-blue { background: var(--uedp-blue-50, #eff6ff); color: var(--uedp-blue-600, #2563eb); }
+    .uedp-c336-icon-purple { background: var(--uedp-purple-50, #faf5ff); color: var(--uedp-purple-600, #9333ea); }
+    .uedp-c336-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--uedp-neutral-600, #525252);
+    }
+    .uedp-c336-badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: var(--uedp-rounded-full, 9999px);
+      margin-left: 8px;
+    }
+    .uedp-c336-badge-success { background: var(--uedp-green-50, #f0fdf4); color: var(--uedp-green-700, #15803d); }
+    .uedp-c336-badge-brand { background: var(--uedp-orange-50, #fff7ed); color: var(--uedp-orange-700, #c2410c); }
+    .uedp-c336-badge-danger { background: var(--uedp-red-50, #fef2f2); color: var(--uedp-red-700, #b91c1c); }
+    .uedp-c336-badge-info { background: var(--uedp-blue-50, #eff6ff); color: var(--uedp-blue-700, #1d4ed8); }
+    .uedp-c336-body {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    .uedp-c336-value {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--uedp-neutral-950, #0a0a0a);
+      letter-spacing: -0.03em;
+    }
+    .uedp-c336-trend {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .uedp-c336-trend-up { background: var(--uedp-green-50, #f0fdf4); color: var(--uedp-green-700, #15803d); }
+    .uedp-c336-trend-down { background: var(--uedp-red-50, #fef2f2); color: var(--uedp-red-700, #b91c1c); }
+    .uedp-c336-prog-bar {
+      height: 6px;
+      background: var(--uedp-neutral-100, #f5f5f5);
+      border-radius: 9999px;
+      overflow: hidden;
+    }
+    .uedp-c336-prog-fill {
+      height: 100%;
+      background: var(--uedp-green-500, #22c55e);
+      border-radius: 9999px;
+    }
+    .uedp-c336-sub {
+      font-size: 12px;
+      color: var(--uedp-neutral-500, #737373);
+      border-top: 1px solid var(--uedp-neutral-100, #f5f5f5);
+      padding-top: 8px;
+    }
+
+    /* Component CSS: Filters */
+    .uedp-flt {
+      display: flex;
+      align-items: center;
+      gap: var(--uedp-gap-4);
+      background: var(--uedp-neutral-0);
+      border: 1px solid var(--uedp-slate-200);
+      border-radius: var(--uedp-rounded-xl);
+      padding: var(--uedp-padding-3) var(--uedp-padding-4);
+      box-shadow: var(--uedp-shadow-sm);
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .uedp-flt-input {
+      padding: 8px 12px;
+      border: 1px solid var(--uedp-slate-200);
+      border-radius: var(--uedp-rounded-md);
+      font-family: var(--uedp-fontFamily-sans);
+      font-size: 13px;
+      outline: none;
+      width: 260px;
+    }
+    .uedp-flt-pill {
+      padding: 6px 14px;
+      border-radius: var(--uedp-rounded-full);
+      font-size: 12px;
+      font-weight: 600;
+      border: 1px solid var(--uedp-slate-200);
+      background: var(--uedp-slate-50);
+      color: var(--uedp-slate-600);
+      cursor: pointer;
+    }
+    .uedp-flt-pill.active {
+      background: var(--uedp-blue-600);
+      color: var(--uedp-neutral-0);
+      border-color: var(--uedp-blue-600);
+    }
+
+    /* Component CSS: Date Filters */
+    .uedp-dtf {
+      display: flex;
+      align-items: center;
+      gap: var(--uedp-gap-4);
+      background: var(--uedp-neutral-0);
+      border: 1px solid var(--uedp-slate-200);
+      border-radius: var(--uedp-rounded-xl);
+      padding: var(--uedp-padding-2) var(--uedp-padding-4);
+      flex-wrap: wrap;
+    }
+    .uedp-dtf-chips {
+      display: flex;
+      background: var(--uedp-slate-100);
+      padding: 3px;
+      border-radius: var(--uedp-rounded-md);
+      gap: 2px;
+    }
+    .uedp-dtf-chip {
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      border: none;
+      border-radius: 4px;
+      background: transparent;
+      color: var(--uedp-slate-600);
+      cursor: pointer;
+    }
+    .uedp-dtf-chip.active {
+      background: var(--uedp-neutral-0);
+      color: var(--uedp-blue-600);
+      box-shadow: var(--uedp-shadow-sm);
+    }
+    .uedp-dtf-input {
+      padding: 4px 8px;
+      border: 1px solid var(--uedp-slate-200);
+      border-radius: 4px;
+      font-family: var(--uedp-fontFamily-mono);
+      font-size: 12px;
+    }
+
+    /* Component CSS: Component 315 */
+    .uedp-c315 {
+      background: var(--uedp-neutral-0);
+      border: 1px solid var(--uedp-slate-200);
+      border-radius: var(--uedp-rounded-2xl);
+      overflow: hidden;
+      box-shadow: var(--uedp-shadow-sm);
+      width: 100%;
+    }
+    .uedp-c315-head {
+      padding: var(--uedp-padding-4);
+      border-bottom: 1px solid var(--uedp-slate-200);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .uedp-tbl {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .uedp-tbl th, .uedp-tbl td {
+      padding: var(--uedp-padding-3) var(--uedp-padding-4);
+      text-align: left;
+      border-bottom: 1px solid var(--uedp-slate-100);
+    }
+    .uedp-tbl th {
+      background: var(--uedp-slate-50);
+      font-weight: 700;
+      color: var(--uedp-slate-600);
+      font-size: 12px;
+    }
+    .uedp-tbl-id {
+      font-family: var(--uedp-fontFamily-mono);
+      font-weight: 600;
+      color: var(--uedp-blue-600);
+    }
+    .uedp-st-comp {
+      background: var(--uedp-emerald-100);
+      color: var(--uedp-emerald-600);
+      padding: 2px 8px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .uedp-st-prog {
+      background: var(--uedp-blue-100);
+      color: var(--uedp-blue-600);
+      padding: 2px 8px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    /* Component CSS: Zones */
+    .uedp-zn {
+      background: var(--uedp-slate-900);
+      color: var(--uedp-slate-100);
+      border-radius: var(--uedp-rounded-2xl);
+      padding: var(--uedp-padding-6);
+      width: 100%;
+    }
+    .uedp-zn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: var(--uedp-gap-4);
+      margin-top: 16px;
+    }
+    .uedp-zn-card {
+      background: var(--uedp-slate-800);
+      border: 1px solid var(--uedp-slate-700);
+      border-radius: var(--uedp-rounded-xl);
+      padding: 14px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .uedp-zn-card.active {
+      border-color: var(--uedp-blue-500);
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+    }
+    .uedp-zn-code {
+      font-family: var(--uedp-fontFamily-mono);
+      font-size: 11px;
+      color: var(--uedp-slate-400);
+    }
+    .uedp-zn-bar {
+      height: 4px;
+      background: var(--uedp-slate-700);
+      border-radius: 2px;
+      margin-top: 10px;
+      overflow: hidden;
+    }
+    .uedp-zn-fill {
+      height: 100%;
+      background: var(--uedp-blue-500);
+    }
+
+    /* Component CSS: Map */
+    .uedp-mp {
+      background: var(--uedp-slate-950);
+      color: var(--uedp-slate-50);
+      border-radius: var(--uedp-rounded-2xl);
+      padding: var(--uedp-padding-6);
+      width: 100%;
+    }
+    .uedp-mp-view {
+      height: 280px;
+      background: #090d16;
+      border-radius: var(--uedp-rounded-xl);
+      border: 1px solid var(--uedp-slate-800);
+      position: relative;
+      overflow: hidden;
+      margin-top: 16px;
+    }
+    .uedp-mp-pin {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--uedp-emerald-500);
+      box-shadow: 0 0 12px var(--uedp-emerald-500);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div>
+        <h1 style="font-size: 22px; font-weight: 800; display: flex; align-items: center; gap: 10px;">
+          UEDP-5 Design System Showcase
+          <span class="badge">Figma Aligned</span>
+        </h1>
+        <p style="font-size: 13px; color: var(--uedp-slate-400); margin-top: 4px;">
+          Figma File: UEDP-5 Design Library (<code>nIQ2z7fDwrAq189abiZCER</code>) • Strict Variable Aliasing Rule Compliant
+        </p>
+      </div>
+      <div>
+        <span class="badge" style="background: #10b981;">GA4 Route Tracked</span>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-inner">
+      <button class="tab-btn active" onclick="switchTab('components')">🧩 Preserved Figma Components (7)</button>
+      <button class="tab-btn" onclick="switchTab('tokens')">🎨 Color & Geometry Tokens</button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Section: Components -->
+    <div id="sec-components" class="section active">
+      <!-- 1. Button (Figma Node ID 4:30) -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">1. Layer Name: "Button"</span>
+          <span class="node-badge">Figma Node ID: 4:30</span>
+        </div>
+        <div class="card-body" style="flex-direction: column; gap: 24px; align-items: flex-start; width: 100%;">
+          <div>
+            <div style="font-size: 13px; font-weight: 700; color: var(--uedp-neutral-600); margin-bottom: 10px;">Variants (Hierarchy)</div>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+              <button class="uedp-btn uedp-btn-primary uedp-btn-md">Primary Action</button>
+              <button class="uedp-btn uedp-btn-secondary uedp-btn-md">Secondary Action</button>
+              <button class="uedp-btn uedp-btn-outline uedp-btn-md">Outline Action</button>
+              <button class="uedp-btn uedp-btn-ghost uedp-btn-md">Ghost Button</button>
+              <button class="uedp-btn uedp-btn-danger uedp-btn-md">Destructive Action</button>
+              <button class="uedp-btn uedp-btn-link uedp-btn-md">Text Link →</button>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size: 13px; font-weight: 700; color: var(--uedp-neutral-600); margin-bottom: 10px;">Scale Sizing (xs, sm, md, lg)</div>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+              <button class="uedp-btn uedp-btn-primary uedp-btn-xs">Extra Small (xs)</button>
+              <button class="uedp-btn uedp-btn-primary uedp-btn-sm">Small (sm)</button>
+              <button class="uedp-btn uedp-btn-primary uedp-btn-md">Medium (md)</button>
+              <button class="uedp-btn uedp-btn-primary uedp-btn-lg">Large (lg)</button>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size: 13px; font-weight: 700; color: var(--uedp-neutral-600); margin-bottom: 10px;">Icon & State Variations</div>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+              <button class="uedp-btn uedp-btn-primary uedp-btn-md">
+                <span>★</span> Leading Icon
+              </button>
+              <button class="uedp-btn uedp-btn-secondary uedp-btn-md">
+                Trailing Icon <span>→</span>
+              </button>
+              <button class="uedp-btn uedp-btn-primary uedp-btn-md" disabled>
+                Disabled State
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-specs">
+          <table class="spec-table">
+            <thead><tr><th>Property</th><th>Bound Token CSS Variable</th><th>Figma Variable ID (Node ID: 4:30)</th></tr></thead>
+            <tbody>
+              <tr><td>Primary Background</td><td><code>--uedp-orange-600</code></td><td><code>VariableID:137:1240</code></td></tr>
+              <tr><td>Primary Hover</td><td><code>--uedp-orange-700</code></td><td><code>VariableID:137:1241</code></td></tr>
+              <tr><td>Primary Pressed / Active</td><td><code>--uedp-orange-800</code></td><td><code>VariableID:137:1242</code></td></tr>
+              <tr><td>Secondary Surface</td><td><code>--uedp-neutral-100</code></td><td><code>VariableID:137:1020</code></td></tr>
+              <tr><td>Border Default</td><td><code>--uedp-neutral-200</code></td><td><code>VariableID:137:1021</code></td></tr>
+              <tr><td>Border Radius (md)</td><td><code>--uedp-border-radius-rounded-md</code> (6px)</td><td><code>VariableID:137:1551</code></td></tr>
+              <tr><td>Gap (md)</td><td><code>--uedp-gap-2</code> (8px)</td><td><code>VariableID:137:1558</code></td></tr>
+              <tr><td>Disabled Opacity</td><td><code>--uedp-opacity-50</code> (0.5)</td><td><code>VariableID:137:1575</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 2. Component 336 / Card (Figma Node ID 32:580) -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">2. Preserved Layer Name: "Component 336" (Card)</span>
+          <span class="node-badge">Figma Node ID: 32:580</span>
+        </div>
+        <div class="card-body" style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+          <!-- Card 1: Revenue (Elevated) -->
+          <div class="uedp-c336 uedp-c336-elevated">
+            <div class="uedp-c336-header">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div class="uedp-c336-icon uedp-c336-icon-green">💰</div>
+                <div>
+                  <span class="uedp-c336-title">Total Revenue</span>
+                  <span class="uedp-c336-badge uedp-c336-badge-success">Goal Met</span>
+                </div>
+              </div>
+              <span style="color: var(--uedp-neutral-400); cursor: pointer;">•••</span>
+            </div>
+            <div class="uedp-c336-body">
+              <div class="uedp-c336-value">$124,850.00</div>
+              <div class="uedp-c336-trend uedp-c336-trend-up">▲ +14.2%</div>
+            </div>
+            <div class="uedp-c336-prog-bar">
+              <div class="uedp-c336-prog-fill" style="width: 85%;"></div>
+            </div>
+            <div class="uedp-c336-sub">Compared to last month ($109,280)</div>
+          </div>
+
+          <!-- Card 2: Active Users (Brand Accent) -->
+          <div class="uedp-c336 uedp-c336-brand">
+            <div class="uedp-c336-header">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div class="uedp-c336-icon uedp-c336-icon-orange">👥</div>
+                <div>
+                  <span class="uedp-c336-title">Active Users</span>
+                  <span class="uedp-c336-badge uedp-c336-badge-brand">+8.4%</span>
+                </div>
+              </div>
+              <span style="color: var(--uedp-neutral-400); cursor: pointer;">•••</span>
+            </div>
+            <div class="uedp-c336-body">
+              <div class="uedp-c336-value">48,290</div>
+              <div class="uedp-c336-trend uedp-c336-trend-up">▲ Live</div>
+            </div>
+            <div class="uedp-c336-prog-bar">
+              <div class="uedp-c336-prog-fill" style="width: 92%; background: var(--uedp-orange-500, #f97316);"></div>
+            </div>
+            <div class="uedp-c336-sub">12,400 concurrent sessions today</div>
+          </div>
+
+          <!-- Card 3: Storage Limit (Outlined Danger) -->
+          <div class="uedp-c336 uedp-c336-outlined">
+            <div class="uedp-c336-header">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div class="uedp-c336-icon uedp-c336-icon-purple">⚡</div>
+                <div>
+                  <span class="uedp-c336-title">Cluster Storage</span>
+                  <span class="uedp-c336-badge uedp-c336-badge-danger">Near Limit</span>
+                </div>
+              </div>
+              <span style="color: var(--uedp-neutral-400); cursor: pointer;">•••</span>
+            </div>
+            <div class="uedp-c336-body">
+              <div class="uedp-c336-value">92.4 %</div>
+              <div class="uedp-c336-trend uedp-c336-trend-down">▼ 7.6% free</div>
+            </div>
+            <div class="uedp-c336-prog-bar">
+              <div class="uedp-c336-prog-fill" style="width: 92%; background: var(--uedp-red-500, #ef4444);"></div>
+            </div>
+            <div class="uedp-c336-sub">Threshold reached on cluster us-east-1</div>
+          </div>
+        </div>
+        <div class="card-specs">
+          <table class="spec-table">
+            <thead><tr><th>Property</th><th>Bound Token CSS Variable</th><th>Figma Variable ID (Node ID: 32:580)</th></tr></thead>
+            <tbody>
+              <tr><td>Frame Corner Radius</td><td><code>--uedp-border-radius-rounded-2xl</code> (16px)</td><td><code>VariableID:137:1554</code></td></tr>
+              <tr><td>Container Padding</td><td><code>--uedp-padding-p-6</code> (24px)</td><td><code>VariableID:137:1569</code></td></tr>
+              <tr><td>Card Surface</td><td><code>--uedp-base-white</code> (#ffffff)</td><td><code>VariableID:137:1000</code></td></tr>
+              <tr><td>Border Default</td><td><code>--uedp-neutral-200</code> (#e5e5e5)</td><td><code>VariableID:137:1021</code></td></tr>
+              <tr><td>Metric Numeric Text</td><td><code>--uedp-neutral-950</code> (#0a0a0a)</td><td><code>VariableID:137:1029</code></td></tr>
+              <tr><td>Positive Trend Badge</td><td><code>--uedp-green-50</code> (fill) / <code>--uedp-green-700</code> (text)</td><td><code>VariableID:137:1185</code> / <code>VariableID:137:1191</code></td></tr>
+              <tr><td>Brand Accent Top</td><td><code>--uedp-orange-600</code></td><td><code>VariableID:137:1240</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 3. Filters -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">3. Preserved Layer Name: "Filters"</span>
+          <span class="node-badge">NodeID:310:FiltersFrame</span>
+        </div>
+        <div class="card-body">
+          <div class="uedp-flt">
+            <input class="uedp-flt-input" type="text" placeholder="Filter components or tokens...">
+            <button class="uedp-flt-pill active">All Items</button>
+            <button class="uedp-flt-pill">Core UI</button>
+            <button class="uedp-flt-pill">Navigation</button>
+            <button class="uedp-flt-pill">Data Display</button>
+          </div>
+        </div>
+        <div class="card-specs">
+          <table class="spec-table">
+            <thead><tr><th>Property</th><th>Bound Token CSS Variable</th><th>Figma Variable ID</th></tr></thead>
+            <tbody>
+              <tr><td>Active Pill BG</td><td><code>--uedp-blue-600</code></td><td><code>VariableID:102:600</code></td></tr>
+              <tr><td>Pill Radius</td><td><code>--uedp-rounded-full</code></td><td><code>VariableID:201:full</code></td></tr>
+              <tr><td>Container Gap</td><td><code>--uedp-gap-4</code></td><td><code>VariableID:202:4</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 4. Date filters -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">4. Preserved Layer Name: "Date filters"</span>
+          <span class="node-badge">NodeID:320:DateFiltersFrame</span>
+        </div>
+        <div class="card-body">
+          <div class="uedp-dtf">
+            <div class="uedp-dtf-chips">
+              <button class="uedp-dtf-chip">Today</button>
+              <button class="uedp-dtf-chip">7D</button>
+              <button class="uedp-dtf-chip active">30D</button>
+              <button class="uedp-dtf-chip">90D</button>
+              <button class="uedp-dtf-chip">YTD</button>
+            </div>
+            <span style="font-size: 12px; color: var(--uedp-slate-500);">From</span>
+            <input class="uedp-dtf-input" type="date" value="2026-07-13">
+            <span style="font-size: 12px; color: var(--uedp-slate-500);">→ To</span>
+            <input class="uedp-dtf-input" type="date" value="2026-08-12">
+          </div>
+        </div>
+        <div class="card-specs">
+          <table class="spec-table">
+            <thead><tr><th>Property</th><th>Bound Token CSS Variable</th><th>Figma Variable ID</th></tr></thead>
+            <tbody>
+              <tr><td>Chip Active Color</td><td><code>--uedp-blue-600</code></td><td><code>VariableID:102:600</code></td></tr>
+              <tr><td>Date Input Font</td><td><code>--uedp-fontFamily-mono</code></td><td><code>VariableID:205:mono</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 5. Component 315 -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">5. Preserved Layer Name: "Component 315"</span>
+          <span class="node-badge">NodeID:315:DataTableFrame</span>
+        </div>
+        <div class="card-body" style="padding: 0;">
+          <div class="uedp-c315">
+            <div class="uedp-c315-head">
+              <div>
+                <strong style="color: var(--uedp-slate-900);">Figma System Sync Log</strong>
+                <p style="font-size: 12px; color: var(--uedp-slate-500);">Showing recent automated discovery & token export events</p>
+              </div>
+              <button class="uedp-btn uedp-btn-secondary" style="font-size: 12px; padding: 4px 10px;">Export CSV</button>
+            </div>
+            <table class="uedp-tbl">
+              <thead>
+                <tr><th>ID</th><th>Task Name</th><th>Category</th><th>Status</th><th>Timestamp</th><th>Amount</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="uedp-tbl-id">TRX-1082</span></td>
+                  <td>Design System Variable Sync</td>
+                  <td><span style="background: #e0e7ff; color: #4338ca; padding: 2px 6px; border-radius: 4px; font-size: 11px;">Tokens</span></td>
+                  <td><span class="uedp-st-comp">Completed</span></td>
+                  <td>Today, 14:20</td>
+                  <td><strong>$4,200.00</strong></td>
+                </tr>
+                <tr>
+                  <td><span class="uedp-tbl-id">TRX-1083</span></td>
+                  <td>Figma Canvas Node Discovery</td>
+                  <td><span style="background: #e0e7ff; color: #4338ca; padding: 2px 6px; border-radius: 4px; font-size: 11px;">API</span></td>
+                  <td><span class="uedp-st-prog">In Progress</span></td>
+                  <td>Today, 13:45</td>
+                  <td><strong>$1,850.50</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-specs">
+          <table class="spec-table">
+            <thead><tr><th>Property</th><th>Bound Token CSS Variable</th><th>Figma Variable ID</th></tr></thead>
+            <tbody>
+              <tr><td>Table Header Background</td><td><code>--uedp-slate-50</code></td><td><code>VariableID:101:50</code></td></tr>
+              <tr><td>ID Monospace Font</td><td><code>--uedp-fontFamily-mono</code></td><td><code>VariableID:205:mono</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 6. Zones -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">6. Preserved Layer Name: "Zones"</span>
+          <span class="node-badge">NodeID:340:ZonesGridFrame</span>
+        </div>
+        <div class="card-body" style="padding: 0;">
+          <div class="uedp-zn">
+            <h3 style="font-size: 16px; font-weight: 700;">Global Availability Zones (5 Active)</h3>
+            <div class="uedp-zn-grid">
+              <div class="uedp-zn-card active">
+                <div style="font-weight: 700; font-size: 13px;">US East (N. Virginia)</div>
+                <div class="uedp-zn-code">us-east-1</div>
+                <div style="font-size: 11px; margin-top: 8px; color: var(--uedp-emerald-500);">Latency: 12 ms • 64% util</div>
+                <div class="uedp-zn-bar"><div class="uedp-zn-fill" style="width: 64%;"></div></div>
+              </div>
+              <div class="uedp-zn-card">
+                <div style="font-weight: 700; font-size: 13px;">US West (Oregon)</div>
+                <div class="uedp-zn-code">us-west-2</div>
+                <div style="font-size: 11px; margin-top: 8px; color: var(--uedp-emerald-500);">Latency: 38 ms • 42% util</div>
+                <div class="uedp-zn-bar"><div class="uedp-zn-fill" style="width: 42%;"></div></div>
+              </div>
+              <div class="uedp-zn-card">
+                <div style="font-weight: 700; font-size: 13px;">Europe (Frankfurt)</div>
+                <div class="uedp-zn-code">eu-central-1</div>
+                <div style="font-size: 11px; margin-top: 8px; color: var(--uedp-amber-500);">Latency: 104 ms • 88% util</div>
+                <div class="uedp-zn-bar"><div class="uedp-zn-fill" style="width: 88%; background: var(--uedp-amber-500);"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-specs">
+          <table class="spec-table">
+            <thead><tr><th>Property</th><th>Bound Token CSS Variable</th><th>Figma Variable ID</th></tr></thead>
+            <tbody>
+              <tr><td>Outer Background</td><td><code>--uedp-slate-900</code></td><td><code>VariableID:101:900</code></td></tr>
+              <tr><td>Card Background</td><td><code>--uedp-slate-800</code></td><td><code>VariableID:101:800</code></td></tr>
+              <tr><td>Active Highlight Border</td><td><code>--uedp-blue-500</code></td><td><code>VariableID:102:500</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 7. Map -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">7. Preserved Layer Name: "Map"</span>
+          <span class="node-badge">NodeID:350:GeoMapFrame</span>
+        </div>
+        <div class="card-body" style="padding: 0;">
+          <div class="uedp-mp">
+            <h3 style="font-size: 16px; font-weight: 700;">Global Infrastructure Node Map</h3>
+            <div class="uedp-mp-view">
+              <div class="uedp-mp-pin" style="left: 24%; top: 34%;" title="New York Data Center (14ms)"></div>
+              <div class="uedp-mp-pin" style="left: 46%; top: 28%;" title="London Node (28ms)"></div>
+              <div class="uedp-mp-pin" style="left: 52%; top: 30%; background: var(--uedp-amber-500); box-shadow: 0 0 12px var(--uedp-amber-500);" title="Frankfurt Hub (94ms)"></div>
+              <div class="uedp-mp-pin" style="left: 82%; top: 40%;" title="Tokyo Edge (110ms)"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-specs">
+          <table class="spec-table">
+            <thead><tr><th>Property</th><th>Bound Token CSS Variable</th><th>Figma Variable ID</th></tr></thead>
+            <tbody>
+              <tr><td>Viewport Surface</td><td><code>--uedp-slate-950</code></td><td><code>VariableID:101:950</code></td></tr>
+              <tr><td>Online Pin Color</td><td><code>--uedp-emerald-500</code></td><td><code>VariableID:104:500</code></td></tr>
+              <tr><td>Warning Pin Color</td><td><code>--uedp-amber-500</code></td><td><code>VariableID:105:500</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Tokens -->
+    <div id="sec-tokens" class="section">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">🎨 Figma Color Palette Tokens</span>
+          <span class="node-badge">base-palette-tokens.json</span>
+        </div>
+        <div class="card-body" style="display: block;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;">
+            <div style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;">
+              <div style="height: 60px; background: var(--uedp-slate-900);"></div>
+              <div style="padding: 10px;"><code>--uedp-slate-900</code><div style="font-size: 11px; color: #64748b;">VariableID:101:900</div></div>
+            </div>
+            <div style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;">
+              <div style="height: 60px; background: var(--uedp-blue-600);"></div>
+              <div style="padding: 10px;"><code>--uedp-blue-600</code><div style="font-size: 11px; color: #64748b;">VariableID:102:600</div></div>
+            </div>
+            <div style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;">
+              <div style="height: 60px; background: var(--uedp-indigo-600);"></div>
+              <div style="padding: 10px;"><code>--uedp-indigo-600</code><div style="font-size: 11px; color: #64748b;">VariableID:103:600</div></div>
+            </div>
+            <div style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;">
+              <div style="height: 60px; background: var(--uedp-emerald-500);"></div>
+              <div style="padding: 10px;"><code>--uedp-emerald-500</code><div style="font-size: 11px; color: #64748b;">VariableID:104:500</div></div>
+            </div>
+            <div style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;">
+              <div style="height: 60px; background: var(--uedp-amber-500);"></div>
+              <div style="padding: 10px;"><code>--uedp-amber-500</code><div style="font-size: 11px; color: #64748b;">VariableID:105:500</div></div>
+            </div>
+            <div style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;">
+              <div style="height: 60px; background: var(--uedp-rose-500);"></div>
+              <div style="padding: 10px;"><code>--uedp-rose-500</code><div style="font-size: 11px; color: #64748b;">VariableID:106:500</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.section').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      
+      const sec = document.getElementById('sec-' + tabId);
+      if (sec) sec.classList.add('active');
+      
+      event.target.classList.add('active');
+
+      if (window.gtag) {
+        gtag('event', 'page_view', {
+          page_title: 'Tab: ' + tabId,
+          page_location: window.location.href + '#' + tabId
+        });
+      }
+    }
+  </script>
+</body>
+</html>

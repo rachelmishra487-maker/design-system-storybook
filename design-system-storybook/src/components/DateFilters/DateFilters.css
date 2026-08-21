@@ -1,0 +1,83 @@
+/* Preserved Figma Layer Name: Date filters CSS Specifications */
+
+.uedp-date-filters {
+  display: flex;
+  align-items: center;
+  gap: var(--uedp-gap-4); /* Bound Variable ID: VariableID:202:4 */
+  background-color: var(--uedp-neutral-0); /* Bound Variable ID: VariableID:107:0 */
+  border: 1px solid var(--uedp-slate-200); /* Bound Variable ID: VariableID:101:200 */
+  border-radius: var(--uedp-rounded-xl); /* Bound Variable ID: VariableID:201:xl */
+  padding: var(--uedp-padding-3) var(--uedp-padding-4); /* Bound Variable ID: VariableID:203:4 */
+  box-shadow: var(--uedp-shadow-sm); /* Bound Variable ID: VariableID:204:sm */
+  font-family: var(--uedp-fontFamily-sans); /* Bound Variable ID: VariableID:205:sans */
+  flex-wrap: wrap;
+}
+
+.uedp-date-filters__presets {
+  display: flex;
+  align-items: center;
+  gap: var(--uedp-gap-1); /* Bound Variable ID: VariableID:202:1 */
+  background-color: var(--uedp-slate-100); /* Bound Variable ID: VariableID:101:100 */
+  border-radius: var(--uedp-rounded-lg); /* Bound Variable ID: VariableID:201:lg */
+  padding: 3px;
+}
+
+.uedp-date-filters__chip {
+  border: none;
+  background: transparent;
+  color: var(--uedp-slate-600); /* Bound Variable ID: VariableID:101:600 */
+  padding: 5px 12px;
+  border-radius: var(--uedp-rounded-md); /* Bound Variable ID: VariableID:201:md */
+  font-size: 12px; /* Hardcoded raw typography */
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.uedp-date-filters__chip:hover {
+  color: var(--uedp-slate-900); /* Bound Variable ID: VariableID:101:900 */
+}
+
+.uedp-date-filters__chip--active {
+  background-color: var(--uedp-neutral-0); /* Bound Variable ID: VariableID:107:0 */
+  color: var(--uedp-blue-600); /* Bound Variable ID: VariableID:102:600 */
+  box-shadow: var(--uedp-shadow-sm); /* Bound Variable ID: VariableID:204:sm */
+  font-weight: 700;
+}
+
+.uedp-date-filters__range-inputs {
+  display: flex;
+  align-items: center;
+  gap: var(--uedp-gap-2); /* Bound Variable ID: VariableID:202:2 */
+}
+
+.uedp-date-filters__input-group {
+  display: flex;
+  align-items: center;
+  gap: var(--uedp-gap-2); /* Bound Variable ID: VariableID:202:2 */
+  background-color: var(--uedp-slate-50); /* Bound Variable ID: VariableID:101:50 */
+  border: 1px solid var(--uedp-slate-200); /* Bound Variable ID: VariableID:101:200 */
+  border-radius: var(--uedp-rounded-md); /* Bound Variable ID: VariableID:201:md */
+  padding: 4px 10px;
+}
+
+.uedp-date-filters__label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--uedp-slate-500); /* Bound Variable ID: VariableID:101:500 */
+  text-transform: uppercase;
+}
+
+.uedp-date-filters__input {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  font-family: var(--uedp-fontFamily-mono); /* Bound Variable ID: VariableID:205:mono */
+  color: var(--uedp-slate-800); /* Bound Variable ID: VariableID:101:800 */
+  outline: none;
+}
+
+.uedp-date-filters__divider {
+  color: var(--uedp-slate-400); /* Bound Variable ID: VariableID:101:400 */
+  font-size: 13px;
+}

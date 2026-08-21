@@ -1,0 +1,111 @@
+/* Preserved Figma Layer Name: Filters CSS Specifications */
+
+.uedp-filters {
+  display: flex;
+  align-items: center;
+  gap: var(--uedp-gap-4); /* Bound Variable ID: VariableID:202:4 */
+  padding: var(--uedp-padding-3) var(--uedp-padding-4); /* Bound Variable ID: VariableID:203:4 */
+  background-color: var(--uedp-neutral-0); /* Bound Variable ID: VariableID:107:0 */
+  border: 1px solid var(--uedp-slate-200); /* Bound Variable ID: VariableID:101:200 */
+  border-radius: var(--uedp-rounded-xl); /* Bound Variable ID: VariableID:201:xl */
+  box-shadow: var(--uedp-shadow-sm); /* Bound Variable ID: VariableID:204:sm */
+  font-family: var(--uedp-fontFamily-sans); /* Bound Variable ID: VariableID:205:sans */
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.uedp-filters__search-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--uedp-gap-2); /* Bound Variable ID: VariableID:202:2 */
+  background-color: var(--uedp-slate-50); /* Bound Variable ID: VariableID:101:50 */
+  border: 1px solid var(--uedp-slate-200); /* Bound Variable ID: VariableID:101:200 */
+  border-radius: var(--uedp-rounded-lg); /* Bound Variable ID: VariableID:201:lg */
+  padding: 6px var(--uedp-padding-3); /* Bound Variable ID: VariableID:203:3 */
+  min-width: 240px; /* Hardcoded Figma search width */
+  flex: 1;
+}
+
+.uedp-filters__search-icon {
+  font-size: 14px;
+  color: var(--uedp-slate-400); /* Bound Variable ID: VariableID:101:400 */
+}
+
+.uedp-filters__search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 13px; /* Hardcoded raw typography */
+  color: var(--uedp-slate-800); /* Bound Variable ID: VariableID:101:800 */
+  width: 100%;
+}
+
+.uedp-filters__search-input::placeholder {
+  color: var(--uedp-slate-400); /* Bound Variable ID: VariableID:101:400 */
+}
+
+.uedp-filters__clear-btn {
+  background: transparent;
+  border: none;
+  color: var(--uedp-slate-400); /* Bound Variable ID: VariableID:101:400 */
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px;
+}
+
+.uedp-filters__categories {
+  display: flex;
+  align-items: center;
+  gap: var(--uedp-gap-2); /* Bound Variable ID: VariableID:202:2 */
+  overflow-x: auto;
+}
+
+.uedp-filters__pill {
+  border: 1px solid var(--uedp-slate-200); /* Bound Variable ID: VariableID:101:200 */
+  background-color: var(--uedp-slate-50); /* Bound Variable ID: VariableID:101:50 */
+  color: var(--uedp-slate-600); /* Bound Variable ID: VariableID:101:600 */
+  border-radius: var(--uedp-rounded-full); /* Bound Variable ID: VariableID:201:full */
+  padding: 6px 14px; /* Hardcoded raw values */
+  font-size: 12px; /* Hardcoded typography */
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.uedp-filters__pill:hover {
+  background-color: var(--uedp-slate-100); /* Bound Variable ID: VariableID:101:100 */
+  color: var(--uedp-slate-900); /* Bound Variable ID: VariableID:101:900 */
+}
+
+.uedp-filters__pill--active {
+  background-color: var(--uedp-blue-600); /* Bound Variable ID: VariableID:102:600 */
+  border-color: var(--uedp-blue-600); /* Bound Variable ID: VariableID:102:600 */
+  color: var(--uedp-neutral-0); /* Bound Variable ID: VariableID:107:0 */
+}
+
+.uedp-filters__view-toggle {
+  display: flex;
+  align-items: center;
+  background-color: var(--uedp-slate-100); /* Bound Variable ID: VariableID:101:100 */
+  border-radius: var(--uedp-rounded-lg); /* Bound Variable ID: VariableID:201:lg */
+  padding: 2px;
+  margin-left: auto;
+}
+
+.uedp-filters__view-btn {
+  border: none;
+  background: transparent;
+  color: var(--uedp-slate-500); /* Bound Variable ID: VariableID:101:500 */
+  padding: 6px 10px;
+  border-radius: var(--uedp-rounded-md); /* Bound Variable ID: VariableID:201:md */
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+
+.uedp-filters__view-btn--active {
+  background-color: var(--uedp-neutral-0); /* Bound Variable ID: VariableID:107:0 */
+  color: var(--uedp-slate-900); /* Bound Variable ID: VariableID:101:900 */
+  box-shadow: var(--uedp-shadow-sm); /* Bound Variable ID: VariableID:204:sm */
+}
