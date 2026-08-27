@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "node scripts/generate-tokens.js && storybook build -o storybook-static",
     "tokens": "node scripts/generate-tokens.js",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build -o storybook-static",
+    "build-storybook": "node scripts/generate-tokens.js && storybook build -o storybook-static",
+    "build-vite": "tsc && vite build",
     "type-check": "tsc --noEmit",
     "figma-sync": "node scripts/figma-sync.js",
     "deploy-vercel": "node scripts/deploy-vercel.js"
