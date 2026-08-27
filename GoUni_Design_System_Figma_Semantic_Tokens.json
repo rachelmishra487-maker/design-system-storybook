@@ -1,0 +1,81 @@
+{
+  "text": {
+    "primary": "{neutral.900}",
+    "secondary": "{neutral.600}",
+    "tertiary": "{neutral.500}",
+    "muted": "{neutral.400}",
+    "inverse": "{neutral.0}",
+    "link": "{orange.600}",
+    "disabled": "{neutral.300}",
+    "success": "{green.700}",
+    "warning": "{amber.700}",
+    "error": "{red.700}",
+    "info": "{blue.700}"
+  },
+  "surface": {
+    "primary": "{neutral.0}",
+    "secondary": "{neutral.50}",
+    "tertiary": "{neutral.100}",
+    "elevated": "{neutral.0}",
+    "inverse": "{neutral.900}",
+    "brand": "{orange.50}",
+    "disabled": "{neutral.100}",
+    "overlay": "{neutral.900-60}"
+  },
+  "border": {
+    "default": "{neutral.200}",
+    "subtle": "{neutral.100}",
+    "strong": "{neutral.300}",
+    "focus": "{orange.600}",
+    "disabled": "{neutral.200}",
+    "success": "{green.400}",
+    "warning": "{amber.400}",
+    "error": "{red.400}",
+    "info": "{blue.400}"
+  },
+  "interactive": {
+    "primary": "{orange.600}",
+    "primaryHover": "{orange.700}",
+    "primaryPressed": "{orange.800}",
+    "primaryDisabled": "{neutral.300}",
+    "secondary": "{neutral.100}",
+    "secondaryHover": "{neutral.200}",
+    "secondaryPressed": "{neutral.300}",
+    "ghost": "{neutral.0}",
+    "ghostHover": "{orange.50}",
+    "link": "{orange.600}",
+    "linkHover": "{orange.700}",
+    "active": "{orange.600}",
+    "selected": "{orange.100}"
+  },
+  "feedback": {
+    "success": {
+      "background": "{green.50}",
+      "surface": "{green.100}",
+      "text": "{green.700}",
+      "border": "{green.300}",
+      "icon": "{green.600}"
+    },
+    "warning": {
+      "background": "{amber.50}",
+      "surface": "{amber.100}",
+      "text": "{amber.700}",
+      "border": "{amber.300}",
+      "icon": "{amber.600}"
+    },
+    "error": {
+      "background": "{red.50}",
+      "surface": "{red.100}",
+      "text": "{red.700}",
+      "border": "{red.300}",
+      "icon": "{red.600}"
+    },
+    "info": {
+      "background": "{blue.50}",
+      "surface": "{blue.100}",
+      "text": "{blue.700}",
+      "border": "{blue.300}",
+      "icon": "{blue.600}"
+    }
+  }
+}

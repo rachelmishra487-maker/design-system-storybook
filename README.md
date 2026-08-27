@@ -21,18 +21,84 @@
 
 ---
 
+## 📁 Repository Structure
+
+```
+├── .storybook/
+│   ├── main.ts                     # Storybook configuration (Vite builder, autodocs)
+│   ├── preview.ts                  # Preview decorator importing figma-tokens.css
+│   └── preview-head.html           # GA4 tracker & route event listeners
+├── base-palette-tokens.json         # Raw Figma color palette token JSON
+├── foundational-tokens.json        # Raw Figma geometry, spacing & elevation token JSON
+├── GoUni_Design_System_Figma_Semantic_Tokens.json  # Semantic tokens reference
+├── scripts/
+│   ├── generate-tokens.js          # Token extraction & CSS generator
+│   ├── figma-sync.js               # Figma REST API canvas discovery
+│   ├── deploy-vercel.js            # Vercel pre-flight verification script
+│   └── serve.js                    # Local development server
+├── src/
+│   ├── components/
+│   │   ├── Button/                 # Figma "Button" Component Set (Node ID 4:30)
+│   │   ├── Component315/           # Figma "Component 315" Data Table
+│   │   ├── Component336/           # Figma "Component 336" Card (Node ID 32:580)
+│   │   ├── DateFilters/            # Figma "Date filters"
+│   │   ├── Filters/                # Figma "Filters"
+│   │   ├── Map/                    # Figma "Map" Edge Topology
+│   │   └── Zones/                  # Figma "Zones" Availability Grid
+│   ├── stories/
+│   │   └── Tokens/
+│   │       ├── ColorPalette.stories.tsx        # Color Token Swatch Gallery
+│   │       └── FoundationalTokens.stories.tsx  # Radii & Spacing Gallery
+│   ├── styles/
+│   │   └── figma-tokens.css        # Auto-generated CSS Custom Properties
+│   ├── App.tsx                     # Interactive React Playground Showcase
+│   └── index.ts                    # Single barrel export for all components
+├── preview-showcase.html           # Standalone offline browser showcase
+├── vercel.json                     # Vercel SPA routing & security headers
+└── package.json                    # Project scripts & dependencies
+```
+
+---
+
 ## 🚀 Quick Start
 
 ### 1. Generate / Synchronize Tokens
 ```bash
-node design-system-storybook/scripts/generate-tokens.js
+node scripts/generate-tokens.js
 ```
 
 ### 2. Start Dev Server / Showcase
 ```bash
-node design-system-storybook/scripts/serve.js
+node scripts/serve.js
 ```
 Open **[http://localhost:6006](http://localhost:6006)** in your browser.
+
+### 3. Storybook Development
+```bash
+npm run storybook
+```
+
+### 4. Build Static Storybook
+```bash
+npm run build-storybook
+```
+
+---
+
+## 🎨 Token Aliasing Specification
+
+| Category | CSS Variable | Figma Variable ID | Example Value |
+|---|---|---|---|
+| Primary Action | `--uedp-orange-600` | `VariableID:137:1240` | `#ea580c` |
+| Primary Hover | `--uedp-orange-700` | `VariableID:137:1241` | `#c2410c` |
+| Inverse Text | `--uedp-base-white` | `VariableID:137:1000` | `#ffffff` |
+| Surface Light | `--uedp-neutral-50` | `VariableID:137:1019` | `#fafafa` |
+| Surface Secondary | `--uedp-neutral-100` | `VariableID:137:1020` | `#f5f5f5` |
+| Border Default | `--uedp-neutral-200` | `VariableID:137:1021` | `#e5e5e5` |
+| Border Radius (md) | `--uedp-border-radius-rounded-md` | `VariableID:137:1551` | `6px` |
+| Border Radius (2xl) | `--uedp-border-radius-rounded-2xl` | `VariableID:137:1554` | `16px` |
+| Gap Scale (md) | `--uedp-gap-2` | `VariableID:137:1558` | `8px` |
+| Padding Scale (p-6) | `--uedp-padding-p-6` | `VariableID:137:1569` | `24px` |
 
 ---
 
