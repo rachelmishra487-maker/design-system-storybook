@@ -1,0 +1,127 @@
+﻿/* Preserved Figma Layer Name: "Component 2/Frame 18" (Figma Node ID: 4:30) */
+/* Dimensions: 266 × 46 Hug */
+
+.uedp-frame-18 {
+  display: inline-flex;
+  align-items: stretch;
+  gap: 12px; /* Distinct gap between Direction and Call matching Figma */
+  height: 46px;
+  width: 266px; /* Exact Figma width */
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.uedp-frame-18--full-width {
+  width: 100%;
+}
+
+/* Sizing Variants */
+.uedp-frame-18--sm {
+  width: 220px;
+  height: 38px;
+  gap: 10px;
+}
+.uedp-frame-18--sm .uedp-frame-18__label {
+  font-size: 17px;
+}
+
+.uedp-frame-18--md {
+  width: 266px;
+  height: 46px;
+  gap: 12px;
+}
+.uedp-frame-18--md .uedp-frame-18__label {
+  font-size: 21px;
+}
+
+.uedp-frame-18--lg {
+  width: 320px;
+  height: 54px;
+  gap: 14px;
+}
+.uedp-frame-18--lg .uedp-frame-18__label {
+  font-size: 25px;
+}
+
+/* Common Button Styles */
+.uedp-frame-18__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: none;
+  border-radius: 0px; /* Sharp corners matching Figma */
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  font-weight: 600;
+  transition: filter 0.16s ease, transform 0.12s ease;
+}
+
+.uedp-frame-18__btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.uedp-frame-18__btn:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+/* Direction Button (Left - Burnt Orange / Terracotta) */
+.uedp-frame-18__btn--direction {
+  flex: 1.1;
+  background-color: #C2410C; /* Terracotta / Burnt Orange matching Figma */
+  color: #FFFFFF;
+}
+
+.uedp-frame-18__btn--direction:hover:not(:disabled) {
+  background-color: #9A3412;
+}
+
+.uedp-frame-18__btn--direction .uedp-frame-18__label {
+  color: #FFFFFF;
+}
+
+/* Call Button (Right - White) */
+.uedp-frame-18__btn--call {
+  flex: 1.2;
+  background-color: #FFFFFF;
+  color: #0F172A; /* Dark charcoal/navy text matching Figma */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.uedp-frame-18__btn--call:hover:not(:disabled) {
+  background-color: #F1F5F9;
+}
+
+.uedp-frame-18__btn--call .uedp-frame-18__label {
+  color: #0F172A;
+}
+
+/* Typography Label */
+.uedp-frame-18__label {
+  display: inline-block;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+/* Disabled State */
+.uedp-frame-18--disabled,
+.uedp-frame-18__btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Canvas Artboard Emulation */
+.uedp-frame-18-canvas-frame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 56px;
+  background-color: #D3D3D3; /* Gray canvas matching Figma artboard */
+  border-radius: 12px;
+}

@@ -1,6 +1,8 @@
 ﻿import React from 'react';
 import './Component2.css';
 
+export * from './Frame18';
+
 export type Component2Variant = 'white' | 'yellow' | 'gray';
 export type Component2Size = 'sm' | 'md' | 'lg';
 

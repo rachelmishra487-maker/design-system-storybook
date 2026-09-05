@@ -3,6 +3,7 @@ import './App.css';
 import {
   Button,
   Component2,
+  Component2Frame18,
   Component3,
   Component4,
   Component5,
@@ -391,6 +392,35 @@ export const App: React.FC = () => {
 
             
             
+            
+            {/* Component 2/Frame 18 - Location Action Buttons (Figma Node ID: 4:30) */}
+            <div className="component-card">
+              <div className="component-card__header">
+                <div className="component-card__title-wrap">
+                  <span className="component-card__layer-name">Component 2/Frame 18 (Direction &amp; Call)</span>
+                  <span className="component-card__layer-badge">Figma Node ID: 4:30</span>
+                </div>
+                <div className="component-card__actions">
+                  <span className="figma-status-tag figma-status-tag--bound">266 &times; 46 Hug</span>
+                </div>
+              </div>
+              <div className="component-card__body" style={{ width: '100%', padding: '36px 0', display: 'flex', justifyContent: 'center', backgroundColor: '#D3D3D3', borderRadius: '12px' }}>
+                <Component2Frame18 />
+              </div>
+              <div className="component-card__spec-table">
+                <table className="spec-table-grid">
+                  <thead>
+                    <tr><th>Action</th><th>Background Color</th><th>Text Color &amp; Specs (Node ID: 4:30)</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Direction (Left)</td><td><code>#C2410C</code> (Terracotta)</td><td>White bold text (<code>#FFFFFF</code>), height: 46px</td></tr>
+                    <tr><td>Call (Right)</td><td><code>#FFFFFF</code> (White)</td><td>Dark charcoal text (<code>#0F172A</code>), height: 46px</td></tr>
+                    <tr><td>Dimensions</td><td><code>266 &times; 46px</code></td><td>Gap: <code>12px</code>, Sharp corners (<code>0px</code>)</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
             {/* Component 2 - Tri-State Buttons (Figma Node ID: 22:459) */}
             <div className="component-card">
               <div className="component-card__header">
