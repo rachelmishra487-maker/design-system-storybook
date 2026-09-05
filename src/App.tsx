@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import {
   Button,
+  Component2,
   Component3,
   Component336,
   Component315,
@@ -387,6 +388,40 @@ export const App: React.FC = () => {
             </div>
 
             
+            
+            {/* Component 2 - Tri-State Buttons (Figma Node ID: 22:459) */}
+            <div className="component-card">
+              <div className="component-card__header">
+                <div className="component-card__title-wrap">
+                  <span className="component-card__layer-name">Component 2 (Button Set)</span>
+                  <span className="component-card__layer-badge">Figma Node ID: 22:459</span>
+                </div>
+                <div className="component-card__actions">
+                  <span className="figma-status-tag figma-status-tag--bound">node-id=22-459</span>
+                </div>
+              </div>
+              <div className="component-card__body" style={{ width: '100%', padding: '32px 0', display: 'flex', justifyContent: 'center', backgroundColor: '#E2E8F0', borderRadius: '12px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '28px', alignItems: 'center' }}>
+                  <Component2 variant="white">button</Component2>
+                  <Component2 variant="yellow">button</Component2>
+                  <Component2 variant="gray">button</Component2>
+                </div>
+              </div>
+              <div className="component-card__spec-table">
+                <table className="spec-table-grid">
+                  <thead>
+                    <tr><th>Variant</th><th>Background Color</th><th>Text Color / Specs (Node ID: 22:459)</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>White</td><td><code>#FFFFFF</code></td><td>Solid black bold text ("button"), radius: 0px</td></tr>
+                    <tr><td>Yellow</td><td><code>#FFB800</code> (Amber)</td><td>Solid black bold text ("button"), radius: 0px</td></tr>
+                    <tr><td>Gray</td><td><code>#949494</code> (Slate Gray)</td><td>Solid black bold text ("button"), radius: 0px</td></tr>
+                    <tr><td>Dimensions</td><td>280px &times; 64px</td><td>Centered bold geometric typography</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
             {/* Component 3 - Stepper (Figma Node ID: 0:1) */}
             <div className="component-card">
               <div className="component-card__header">

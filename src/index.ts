@@ -1,5 +1,6 @@
 ﻿// Barrel Export for Figma Design System Components
 export * from './components/Button/Button';
+export * from './components/Component2/Component2';
 export * from './components/Component3/Component3';
 export * from './components/Component336/Component336';
 export * from './components/Filters/Filters';
