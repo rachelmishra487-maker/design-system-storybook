@@ -15,6 +15,8 @@ import {
   Map,
   Frame2,
   Frame2Group,
+  Frame36,
+  Frame36Group,
 } from './index';
 
 type Tab = 'overview' | 'colors' | 'foundations' | 'components';
@@ -57,7 +59,7 @@ export const App: React.FC = () => {
             </div>
             <div className="stat-pill stat-pill--components">
               <span className="stat-dot" />
-              <span>8 Figma Components Preserved</span>
+              <span>9 Figma Components Preserved</span>
             </div>
             <div className="stat-pill stat-pill--figma">
               <span className="stat-dot" />
@@ -420,6 +422,36 @@ export const App: React.FC = () => {
                     <tr><td>State 2: Outline</td><td><code>#FFFFFF</code> Fill + <code>2.5px solid #FFB800</code></td><td>White Pill Card (<code>#FFFFFF</code>), Navy Title (<code>#0F172A</code>, 700)</td></tr>
                     <tr><td>State 3: Gray</td><td><code>#8E8E93</code> Fill + <code>2.5px solid #FFB800</code></td><td>White Pill Card (<code>#FFFFFF</code>), Navy Title (<code>#0F172A</code>, 700)</td></tr>
                     <tr><td>Geometry</td><td>Squircle: <code>60 &times; 60px</code> (radius: <code>18px</code>)</td><td>Card: <code>480 &times; 104px</code> (radius: <code>44px</code>, gap: <code>28px</code>)</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            
+            {/* Frame 36 - Select Field Component Set (Figma Node ID: 31:558) */}
+            <div className="component-card">
+              <div className="component-card__header">
+                <div className="component-card__title-wrap">
+                  <span className="component-card__layer-name">Frame 36 (Select Field Component Set)</span>
+                  <span className="component-card__layer-badge">Figma Node ID: 31:558</span>
+                </div>
+                <div className="component-card__actions">
+                  <span className="figma-status-tag figma-status-tag--bound">node-id=31-558</span>
+                </div>
+              </div>
+              <div className="component-card__body" style={{ width: '100%', padding: '36px 0', display: 'flex', justifyContent: 'center', backgroundColor: '#C8CBD0', borderRadius: '12px' }}>
+                <Frame36Group />
+              </div>
+              <div className="component-card__spec-table">
+                <table className="spec-table-grid">
+                  <thead>
+                    <tr><th>Variant</th><th>Background Surface</th><th>Text / Chevron / Shadow (Node ID: 31:558)</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Default (Top)</td><td><code>#FFFFFF</code> (Flat White)</td><td>Solid Black text &amp; chevron (<code>#000000</code>), No shadow</td></tr>
+                    <tr><td>Gray (Middle)</td><td><code>#8E8E93</code> (Slate Gray)</td><td>Muted Charcoal text &amp; chevron (<code>#5A5A5E</code>), No shadow</td></tr>
+                    <tr><td>Elevated (Bottom)</td><td><code>#FFFFFF</code> (Elevated White)</td><td>Solid Black text &amp; chevron, Prominent drop shadow (<code>0 14px 28px rgba(0,0,0,0.24)</code>)</td></tr>
+                    <tr><td>Geometry</td><td>Squircle Card: <code>280 &times; 68px</code></td><td>Corner radius: <code>20px</code>, Chevron stroke: <code>3.2px</code></td></tr>
                   </tbody>
                 </table>
               </div>

@@ -1,0 +1,245 @@
+﻿/* Preserved Figma Layer Name: "Frame 36" (Figma Node ID: 31:558) */
+
+/* Wrapper for relative dropdown positioning */
+.uedp-frame-36-wrapper {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/* Card Base */
+.uedp-frame-36 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: default;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease;
+}
+
+.uedp-frame-36--full-width {
+  width: 100% !important;
+}
+
+/* Label text */
+.uedp-frame-36__label {
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Chevron container */
+.uedp-frame-36__chevron {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.24s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.uedp-frame-36__chevron--open {
+  transform: rotate(180deg);
+}
+
+/* Sizing Scales */
+.uedp-frame-36--size-sm {
+  width: 220px;
+  min-height: 52px;
+  padding: 12px 18px;
+  gap: 14px;
+  border-radius: 16px;
+}
+.uedp-frame-36--size-sm .uedp-frame-36__label {
+  font-size: 17px;
+}
+
+.uedp-frame-36--size-md {
+  width: 280px;
+  min-height: 68px;
+  padding: 18px 24px;
+  gap: 20px;
+  border-radius: 20px;
+}
+.uedp-frame-36--size-md .uedp-frame-36__label {
+  font-size: 22px;
+}
+
+.uedp-frame-36--size-lg {
+  width: 340px;
+  min-height: 82px;
+  padding: 22px 30px;
+  gap: 24px;
+  border-radius: 24px;
+}
+.uedp-frame-36--size-lg .uedp-frame-36__label {
+  font-size: 26px;
+}
+
+/* 1. Default Variant: Pure White Flat Card */
+.uedp-frame-36--default {
+  background-color: #FFFFFF;
+  color: #000000;
+  box-shadow: none;
+}
+.uedp-frame-36--default .uedp-frame-36__label {
+  color: #000000;
+}
+.uedp-frame-36--default .uedp-frame-36__chevron {
+  color: #000000;
+}
+
+/* 2. Gray Variant: Medium Slate-Gray with Muted Charcoal */
+.uedp-frame-36--gray {
+  background-color: #8E8E93;
+  color: #5A5A5E;
+  box-shadow: none;
+}
+.uedp-frame-36--gray .uedp-frame-36__label {
+  color: #5A5A5E;
+}
+.uedp-frame-36--gray .uedp-frame-36__chevron {
+  color: #5A5A5E;
+}
+
+/* 3. Elevated Variant: Pure White with Soft Prominent Shadow */
+.uedp-frame-36--elevated {
+  background-color: #FFFFFF;
+  color: #000000;
+  box-shadow: 0 14px 28px -4px rgba(0, 0, 0, 0.24), 0 6px 12px -2px rgba(0, 0, 0, 0.10);
+}
+.uedp-frame-36--elevated .uedp-frame-36__label {
+  color: #000000;
+}
+.uedp-frame-36--elevated .uedp-frame-36__chevron {
+  color: #000000;
+}
+
+/* Interactive States */
+.uedp-frame-36--interactive {
+  cursor: pointer;
+}
+
+.uedp-frame-36--interactive:hover {
+  transform: translateY(-2px);
+}
+.uedp-frame-36--default.uedp-frame-36--interactive:hover {
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.12);
+}
+.uedp-frame-36--elevated.uedp-frame-36--interactive:hover {
+  box-shadow: 0 18px 34px -4px rgba(0, 0, 0, 0.28), 0 8px 16px -2px rgba(0, 0, 0, 0.14);
+}
+
+.uedp-frame-36--interactive:active {
+  transform: translateY(0);
+}
+
+.uedp-frame-36--interactive:focus-visible {
+  outline: 3px solid #8B5CF6;
+  outline-offset: 3px;
+}
+
+/* Floating Dropdown Menu */
+.uedp-frame-36__menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  z-index: 100;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  background-color: #FFFFFF;
+  border-radius: 18px;
+  box-shadow: 0 16px 36px -4px rgba(0, 0, 0, 0.22), 0 6px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  max-height: 260px;
+  overflow-y: auto;
+  animation: uedp-menu-fade-in 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes uedp-menu-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.uedp-frame-36__menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-family: var(--uedp-fontFamily-sans, 'Inter', sans-serif);
+  font-size: 16px;
+  font-weight: 500;
+  color: #1E293B;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.uedp-frame-36__menu-item:hover {
+  background-color: #F1F5F9;
+  color: #0F172A;
+}
+
+.uedp-frame-36__menu-item--selected {
+  font-weight: 700;
+  color: #7C3AED;
+  background-color: #F5F3FF;
+}
+
+.uedp-frame-36__menu-check {
+  font-size: 20px;
+  line-height: 1;
+  color: #7C3AED;
+}
+
+/* Authentic Figma Artboard Canvas Container */
+.uedp-frame-36-canvas-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 48px;
+  background-color: #C8CBD0;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.uedp-frame-36-canvas-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  color: #8B5CF6;
+  margin-bottom: 12px;
+  user-select: none;
+}
+
+.uedp-frame-36-canvas-badge__icon {
+  font-size: 13px;
+  line-height: 1;
+}
+
+/* Purple dashed component set boundary matching Figma exactly */
+.uedp-frame-36-component-set {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  padding: 36px 40px;
+  border: 2px dashed #8B5CF6;
+  border-radius: 20px;
+  box-sizing: border-box;
+}

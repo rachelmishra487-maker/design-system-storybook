@@ -11,3 +11,4 @@ export * from './components/DateFilters/DateFilters';
 export * from './components/Zones/Zones';
 export * from './components/Map/Map';
 export * from './components/Frame2/Frame2';
+export * from './components/Frame36/Frame36';
