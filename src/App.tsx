@@ -19,6 +19,8 @@ import {
   Frame36Group,
   Checkbox,
   CheckboxGroup,
+  Frame31,
+  Frame31Group,
 } from './index';
 
 type Tab = 'overview' | 'colors' | 'foundations' | 'components';
@@ -61,7 +63,7 @@ export const App: React.FC = () => {
             </div>
             <div className="stat-pill stat-pill--components">
               <span className="stat-dot" />
-              <span>10 Figma Components Preserved</span>
+              <span>11 Figma Components Preserved</span>
             </div>
             <div className="stat-pill stat-pill--figma">
               <span className="stat-dot" />
@@ -483,6 +485,36 @@ export const App: React.FC = () => {
                     <tr><td>State 1: Checked (Top)</td><td><code>#FFB800</code> Solid Fill (Golden Amber)</td><td>Squircle indicator (<code>60 &times; 60px</code>, radius: <code>18px</code>)</td></tr>
                     <tr><td>State 2: Unchecked (Bottom)</td><td><code>#FFFFFF</code> Fill + <code>2.5px solid #FFB800</code></td><td>Squircle outline (<code>60 &times; 60px</code>, radius: <code>18px</code>)</td></tr>
                     <tr><td>Integration</td><td>Standalone &amp; Frame 2 Indicator</td><td>Also serves as the left indicator inside Frame 2</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            
+            {/* Frame 31 - Program Capsule Card (Figma Node ID: 31:492) */}
+            <div className="component-card">
+              <div className="component-card__header">
+                <div className="component-card__title-wrap">
+                  <span className="component-card__layer-name">Frame 31 (Program Capsule Card)</span>
+                  <span className="component-card__layer-badge">Figma Node ID: 31:492</span>
+                </div>
+                <div className="component-card__actions">
+                  <span className="figma-status-tag figma-status-tag--bound">node-id=31-492</span>
+                </div>
+              </div>
+              <div className="component-card__body" style={{ width: '100%', padding: '36px 0', display: 'flex', justifyContent: 'center', backgroundColor: '#C8CBD0', borderRadius: '12px' }}>
+                <Frame31Group />
+              </div>
+              <div className="component-card__spec-table">
+                <table className="spec-table-grid">
+                  <thead>
+                    <tr><th>Variant</th><th>Border Style</th><th>Visual Specs (Node ID: 31:492)</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Variant 1: Amber (Top)</td><td><code>4.5px solid #FFB800</code></td><td>Capsule card (<code>540 &times; 165px</code>, radius: <code>52px</code>)</td></tr>
+                    <tr><td>Variant 2: Neutral (Middle)</td><td><code>3.5px solid #B4BAC2</code></td><td>Capsule card (<code>540 &times; 165px</code>, radius: <code>52px</code>)</td></tr>
+                    <tr><td>Variant 3: Elevated (Bottom)</td><td><code>5px solid #FFB800</code></td><td>Deep elevated drop shadow (<code>0 16px 36px rgba(0,0,0,0.28)</code>)</td></tr>
+                    <tr><td>Typography &amp; Fill</td><td>Surface: <code>#DCE0E5</code> (Silvery Gray)</td><td>Title: <code>30px / 700</code>, Subtitle: <code>19px / 400</code></td></tr>
                   </tbody>
                 </table>
               </div>

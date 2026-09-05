@@ -1,0 +1,199 @@
+﻿/* Preserved Figma Layer Name: "Frame 31" (Figma Node ID: 31:492) */
+
+/* Base Card */
+.uedp-frame-31 {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  box-sizing: border-box;
+  background-color: #DCE0E5;
+  user-select: none;
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease;
+}
+
+.uedp-frame-31--full-width {
+  width: 100% !important;
+}
+
+/* Title Heading */
+.uedp-frame-31__title {
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  color: #000000;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+/* Subtitle */
+.uedp-frame-31__subtitle {
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  color: #000000;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  opacity: 0.95;
+}
+
+/* 1. Amber Variant (Top): 4.5px Solid Golden Amber */
+.uedp-frame-31--amber {
+  border: 4.5px solid #FFB800;
+  box-shadow: 0 10px 24px -4px rgba(0, 0, 0, 0.16);
+}
+
+/* 2. Neutral Variant (Middle): 3.5px Solid Slate Gray */
+.uedp-frame-31--neutral {
+  border: 3.5px solid #B4BAC2;
+  box-shadow: 0 10px 24px -4px rgba(0, 0, 0, 0.14);
+}
+
+/* 3. Elevated Variant (Bottom): 5px Solid Golden Amber + Deep Warm Shadow */
+.uedp-frame-31--elevated {
+  border: 5px solid #FFB800;
+  box-shadow: 0 16px 36px -4px rgba(0, 0, 0, 0.28), 0 6px 18px rgba(255, 184, 0, 0.25);
+}
+
+/* Sizing Scales */
+.uedp-frame-31--size-sm {
+  width: 420px;
+  min-height: 130px;
+  padding: 24px 32px;
+  border-radius: 40px;
+  gap: 8px;
+}
+.uedp-frame-31--size-sm .uedp-frame-31__title {
+  font-size: 23px;
+}
+.uedp-frame-31--size-sm .uedp-frame-31__subtitle {
+  font-size: 15px;
+}
+
+.uedp-frame-31--size-md {
+  width: 540px;
+  min-height: 165px;
+  padding: 36px 44px;
+  border-radius: 52px;
+  gap: 10px;
+}
+.uedp-frame-31--size-md .uedp-frame-31__title {
+  font-size: 30px;
+}
+.uedp-frame-31--size-md .uedp-frame-31__subtitle {
+  font-size: 19px;
+}
+
+.uedp-frame-31--size-lg {
+  width: 640px;
+  min-height: 195px;
+  padding: 44px 52px;
+  border-radius: 60px;
+  gap: 12px;
+}
+.uedp-frame-31--size-lg .uedp-frame-31__title {
+  font-size: 36px;
+}
+.uedp-frame-31--size-lg .uedp-frame-31__subtitle {
+  font-size: 22px;
+}
+
+/* Interactive States */
+.uedp-frame-31--interactive {
+  cursor: pointer;
+}
+
+.uedp-frame-31--interactive:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px -4px rgba(0, 0, 0, 0.24);
+}
+
+.uedp-frame-31--elevated.uedp-frame-31--interactive:hover {
+  box-shadow: 0 22px 42px -4px rgba(0, 0, 0, 0.32), 0 8px 22px rgba(255, 184, 0, 0.3);
+}
+
+.uedp-frame-31--interactive:active {
+  transform: translateY(0);
+}
+
+.uedp-frame-31--interactive:focus-visible {
+  outline: 3px solid #FFB800;
+  outline-offset: 4px;
+}
+
+/* Authentic Figma Artboard Canvas Container */
+.uedp-frame-31-canvas-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 44px 44px 44px;
+  background-color: #C8CBD0;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.uedp-frame-31-canvas-badge {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  color: #8B5CF6;
+  margin-bottom: 12px;
+  user-select: none;
+}
+
+.uedp-frame-31-canvas-badge__icon {
+  font-size: 13px;
+  line-height: 1;
+}
+
+/* Purple dashed component set boundary */
+.uedp-frame-31-component-set {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  padding: 36px 36px;
+  border: 2px dashed #8B5CF6;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+/* Figma 3 Variants Footer Badge */
+.uedp-frame-31-footer-badge-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.uedp-frame-31-variants-badge {
+  background-color: #8B5CF6;
+  color: #FFFFFF;
+  font-family: var(--uedp-fontFamily-sans, 'Inter', sans-serif);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.uedp-frame-31-plus-badge {
+  background-color: #8B5CF6;
+  color: #FFFFFF;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 4px;
+}
