@@ -21,6 +21,8 @@ import {
   CheckboxGroup,
   Frame31,
   Frame31Group,
+  Card,
+  CardGroup,
 } from './index';
 
 type Tab = 'overview' | 'colors' | 'foundations' | 'components';
@@ -63,7 +65,7 @@ export const App: React.FC = () => {
             </div>
             <div className="stat-pill stat-pill--components">
               <span className="stat-dot" />
-              <span>11 Figma Components Preserved</span>
+              <span>12 Figma Components Preserved</span>
             </div>
             <div className="stat-pill stat-pill--figma">
               <span className="stat-dot" />
@@ -515,6 +517,35 @@ export const App: React.FC = () => {
                     <tr><td>Variant 2: Neutral (Middle)</td><td><code>3.5px solid #B4BAC2</code></td><td>Capsule card (<code>540 &times; 165px</code>, radius: <code>52px</code>)</td></tr>
                     <tr><td>Variant 3: Elevated (Bottom)</td><td><code>5px solid #FFB800</code></td><td>Deep elevated drop shadow (<code>0 16px 36px rgba(0,0,0,0.28)</code>)</td></tr>
                     <tr><td>Typography &amp; Fill</td><td>Surface: <code>#DCE0E5</code> (Silvery Gray)</td><td>Title: <code>30px / 700</code>, Subtitle: <code>19px / 400</code></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            
+            {/* Card - Duration Squircle Card (Figma Node ID: 32:620) */}
+            <div className="component-card">
+              <div className="component-card__header">
+                <div className="component-card__title-wrap">
+                  <span className="component-card__layer-name">Card (Duration &amp; Metric Squircle)</span>
+                  <span className="component-card__layer-badge">Figma Node ID: 32:620</span>
+                </div>
+                <div className="component-card__actions">
+                  <span className="figma-status-tag figma-status-tag--bound">node-id=32-620</span>
+                </div>
+              </div>
+              <div className="component-card__body" style={{ width: '100%', padding: '36px 0', display: 'flex', justifyContent: 'center', backgroundColor: '#C8CBD0', borderRadius: '12px' }}>
+                <CardGroup />
+              </div>
+              <div className="component-card__spec-table">
+                <table className="spec-table-grid">
+                  <thead>
+                    <tr><th>Variant</th><th>Surface Fill</th><th>Icon &amp; Typography (Node ID: 32:620)</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>White (Top)</td><td><code>#FFFFFF</code> (Pure White)</td><td>Black Clock (<code>44px</code>), Slate Label (<code>21px</code>), Black Value (<code>32px</code>)</td></tr>
+                    <tr><td>Gray (Bottom)</td><td><code>#8E8E93</code> (Slate Gray)</td><td>Black Clock (<code>44px</code>), Darker Slate Label (<code>21px</code>), Black Value (<code>32px</code>)</td></tr>
+                    <tr><td>Card Dimensions</td><td><code>260 &times; 300px</code> (radius: <code>38px</code>)</td><td>Center-aligned vertical layout with soft drop shadow</td></tr>
                   </tbody>
                 </table>
               </div>

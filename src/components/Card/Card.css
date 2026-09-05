@@ -1,0 +1,193 @@
+﻿/* Preserved Figma Layer Name: "Card" (Figma Node ID: 32:620) */
+
+/* Base Card */
+.uedp-card {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: default;
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Alignments */
+.uedp-card--align-center {
+  align-items: center;
+  text-align: center;
+}
+
+.uedp-card--align-left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Icon Container */
+.uedp-card__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Label: "DURATION" */
+.uedp-card__label {
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+/* Value: "4 Years" */
+.uedp-card__value {
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+/* Variant 1: White Surface */
+.uedp-card--white {
+  background-color: #FFFFFF;
+  box-shadow: 0 14px 28px -4px rgba(0, 0, 0, 0.16), 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+.uedp-card--white .uedp-card__label {
+  color: #6B7280;
+}
+
+/* Variant 2: Gray Surface */
+.uedp-card--gray {
+  background-color: #8E8E93;
+  box-shadow: 0 14px 28px -4px rgba(0, 0, 0, 0.20), 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.uedp-card--gray .uedp-card__label {
+  color: #475569;
+}
+
+/* Sizing Scales */
+.uedp-card--size-sm {
+  width: 200px;
+  height: 230px;
+  padding: 26px 20px 28px 20px;
+  border-radius: 28px;
+}
+.uedp-card--size-sm .uedp-card__label {
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+.uedp-card--size-sm .uedp-card__value {
+  font-size: 24px;
+}
+
+.uedp-card--size-md {
+  width: 260px;
+  height: 300px;
+  padding: 36px 28px 40px 28px;
+  border-radius: 38px;
+}
+.uedp-card--size-md .uedp-card__label {
+  font-size: 21px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.uedp-card--size-md .uedp-card__value {
+  font-size: 32px;
+}
+
+.uedp-card--size-lg {
+  width: 320px;
+  height: 370px;
+  padding: 44px 34px 48px 34px;
+  border-radius: 46px;
+}
+.uedp-card--size-lg .uedp-card__label {
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.uedp-card--size-lg .uedp-card__value {
+  font-size: 38px;
+}
+
+/* Interactive States */
+.uedp-card--interactive {
+  cursor: pointer;
+}
+
+.uedp-card--interactive:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 38px -6px rgba(0, 0, 0, 0.24);
+}
+
+.uedp-card--interactive:active {
+  transform: translateY(0);
+}
+
+.uedp-card--interactive:focus-visible {
+  outline: 3px solid #8B5CF6;
+  outline-offset: 4px;
+}
+
+/* Authentic Figma Artboard Canvas Container */
+.uedp-card-canvas-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 44px 44px 44px;
+  background-color: #C8CBD0;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.uedp-card-canvas-badge {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  color: #8B5CF6;
+  margin-bottom: 12px;
+  user-select: none;
+}
+
+.uedp-card-canvas-badge__icon {
+  font-size: 13px;
+  line-height: 1;
+}
+
+/* Purple dashed component set boundary */
+.uedp-card-component-set {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 36px 36px;
+  border: 2px dashed #8B5CF6;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+/* Figma 2 Variants Footer Badge */
+.uedp-card-footer-badge-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.uedp-card-variants-badge {
+  background-color: #8B5CF6;
+  color: #FFFFFF;
+  font-family: var(--uedp-fontFamily-sans, 'Inter', sans-serif);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+}

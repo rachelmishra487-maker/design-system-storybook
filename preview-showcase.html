@@ -328,6 +328,106 @@
 
 
 
+
+    /* Component CSS: Card - Duration Squircle Card (Figma Node ID 32:620) */
+    .uedp-card {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      box-sizing: border-box;
+      user-select: none;
+      width: 260px;
+      height: 300px;
+      padding: 36px 28px 40px 28px;
+      border-radius: 38px;
+      transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .uedp-card__icon-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .uedp-card__label {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-weight: 600;
+      font-size: 21px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+    .uedp-card__value {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      color: #000000;
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+    }
+    .uedp-card--white {
+      background-color: #FFFFFF;
+      box-shadow: 0 14px 28px -4px rgba(0, 0, 0, 0.16), 0 4px 10px rgba(0, 0, 0, 0.06);
+    }
+    .uedp-card--white .uedp-card__label {
+      color: #6B7280;
+    }
+    .uedp-card--gray {
+      background-color: #8E8E93;
+      box-shadow: 0 14px 28px -4px rgba(0, 0, 0, 0.20), 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+    .uedp-card--gray .uedp-card__label {
+      color: #475569;
+    }
+    .uedp-card-canvas-container {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 36px 44px 44px 44px;
+      background-color: #C8CBD0;
+      border-radius: 16px;
+      box-sizing: border-box;
+    }
+    .uedp-card-canvas-badge {
+      align-self: flex-start;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #8B5CF6;
+      margin-bottom: 12px;
+      user-select: none;
+    }
+    .uedp-card-component-set {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+      padding: 36px 36px;
+      border: 2px dashed #8B5CF6;
+      border-radius: 20px;
+      box-sizing: border-box;
+    }
+    .uedp-card-footer-badge-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      user-select: none;
+    }
+    .uedp-card-variants-badge {
+      background-color: #8B5CF6;
+      color: #FFFFFF;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
     /* Component CSS: Frame 31 - Program Capsule Card (Figma Node ID 31:492) */
     .uedp-frame-31 {
       display: inline-flex;
@@ -1290,6 +1390,62 @@
 
 
 
+
+
+      <!-- Card (Figma Node ID 32:620) -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Preserved Layer Name: "Card" (Duration &amp; Metric Squircle)</span>
+          <span class="node-badge">Figma Node ID: 32:620 (2 Variants)</span>
+        </div>
+        <div class="card-body" style="width: 100%; display: flex; justify-content: center; padding: 40px 0; background-color: #C8CBD0; border-radius: 8px;">
+          <div class="uedp-card-canvas-container">
+            <div class="uedp-card-canvas-badge">
+              <span>&#10070;</span>
+              <span>Card</span>
+            </div>
+            <div class="uedp-card-component-set">
+              <!-- Variant 1: White Surface -->
+              <div class="uedp-card uedp-card--white">
+                <div class="uedp-card__icon-wrap">
+                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <circle cx="22" cy="22" r="22" fill="#000000"/>
+                    <path d="M22 11V22H31" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <span class="uedp-card__label">DURATION</span>
+                <span class="uedp-card__value">4 Years</span>
+              </div>
+              <!-- Variant 2: Gray Surface -->
+              <div class="uedp-card uedp-card--gray">
+                <div class="uedp-card__icon-wrap">
+                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <circle cx="22" cy="22" r="22" fill="#000000"/>
+                    <path d="M22 11V22H31" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <span class="uedp-card__label">DURATION</span>
+                <span class="uedp-card__value">4 Years</span>
+              </div>
+            </div>
+            <div class="uedp-card-footer-badge-wrap">
+              <span class="uedp-card-variants-badge">2 Variants</span>
+            </div>
+          </div>
+        </div>
+        <div class="table-container" style="margin-top: 20px;">
+          <table class="spec-table">
+            <thead>
+              <tr><th>Variant</th><th>Surface Fill</th><th>Icon &amp; Typography (Node ID: 32:620)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Variant 1: White (Top)</td><td><code>#FFFFFF</code> (Pure White)</td><td>Black Clock (<code>44px</code>), Slate Label (<code>21px</code>), Black Value (<code>32px</code>)</td></tr>
+              <tr><td>Variant 2: Gray (Bottom)</td><td><code>#8E8E93</code> (Slate Gray)</td><td>Black Clock (<code>44px</code>), Slate Label (<code>21px</code>), Black Value (<code>32px</code>)</td></tr>
+              <tr><td>Dimensions</td><td><code>260 &times; 300px</code> (radius: <code>38px</code>)</td><td>Center-aligned vertical layout with soft drop shadow</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
       <!-- Frame 31 (Figma Node ID 31:492) -->
       <div class="card">
