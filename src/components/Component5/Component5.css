@@ -34,7 +34,7 @@
 .uedp-component-5__footer {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
   text-align: left;
 }
 
@@ -42,67 +42,66 @@
 .uedp-component-5__title {
   margin: 0;
   font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
-  font-weight: 800;
+  font-weight: 700;
   color: #FFFFFF;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
 }
 
 /* Subtitle: "Instant guidance" */
 .uedp-component-5__subtitle {
   margin: 0;
   font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
-  font-weight: 500;
+  font-weight: 400;
   color: #FFFFFF;
-  line-height: 1.25;
+  line-height: 1.3;
   opacity: 0.95;
-  letter-spacing: -0.01em;
 }
 
 /* Sizing Scale */
 .uedp-component-5--sm {
-  width: 240px;
-  height: 250px;
+  width: 230px;
+  height: 245px;
   padding: 24px 24px 28px 24px;
-  border-radius: 42px;
+  border-radius: 28px;
 }
 .uedp-component-5--sm .uedp-component-5__title {
-  font-size: 26px;
+  font-size: 23px;
 }
 .uedp-component-5--sm .uedp-component-5__subtitle {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .uedp-component-5--md {
-  width: 290px;
-  height: 310px;
-  padding: 32px 32px 36px 32px;
-  border-radius: 52px; /* Generous Squircle matching Figma spec */
+  width: 280px;
+  height: 300px;
+  padding: 32px 28px 36px 28px;
+  border-radius: 36px; /* Squircle matching Figma */
 }
 .uedp-component-5--md .uedp-component-5__title {
-  font-size: 32px;
+  font-size: 28px;
 }
 .uedp-component-5--md .uedp-component-5__subtitle {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .uedp-component-5--lg {
-  width: 350px;
-  height: 375px;
-  padding: 40px 40px 44px 40px;
-  border-radius: 62px;
+  width: 340px;
+  height: 360px;
+  padding: 38px 34px 42px 34px;
+  border-radius: 44px;
 }
 .uedp-component-5--lg .uedp-component-5__title {
-  font-size: 38px;
+  font-size: 34px;
 }
 .uedp-component-5--lg .uedp-component-5__subtitle {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 /* 1. Yellow / Amber Variant */
 .uedp-component-5--yellow {
   background-color: #FFB800; /* Vibrant Figma Golden-Amber */
-  box-shadow: 0 4px 16px rgba(255, 184, 0, 0.2);
+  box-shadow: 0 4px 16px rgba(255, 184, 0, 0.15);
 }
 
 /* 2. Gray Variant */
@@ -118,12 +117,12 @@
 
 .uedp-component-5--interactive:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 36px -6px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 32px -6px rgba(0, 0, 0, 0.2);
 }
 
 .uedp-component-5--interactive:active {
   transform: translateY(-1px);
-  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 8px 18px -4px rgba(0, 0, 0, 0.16);
 }
 
 .uedp-component-5--interactive:focus-visible {
