@@ -4,6 +4,7 @@ import {
   Button,
   Component2,
   Component3,
+  Component4,
   Component336,
   Component315,
   DateFilters,
@@ -417,6 +418,40 @@ export const App: React.FC = () => {
                     <tr><td>Yellow</td><td><code>#FFB800</code> (Amber)</td><td>Solid black bold text ("button"), radius: 0px</td></tr>
                     <tr><td>Gray</td><td><code>#949494</code> (Slate Gray)</td><td>Solid black bold text ("button"), radius: 0px</td></tr>
                     <tr><td>Dimensions</td><td>280px &times; 64px</td><td>Centered bold geometric typography</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            
+            {/* Component 4 - Elevated Google Button Set (Figma Node ID: 23:524) */}
+            <div className="component-card">
+              <div className="component-card__header">
+                <div className="component-card__title-wrap">
+                  <span className="component-card__layer-name">Component 4 (Elevated Google Buttons)</span>
+                  <span className="component-card__layer-badge">Figma Node ID: 23:524</span>
+                </div>
+                <div className="component-card__actions">
+                  <span className="figma-status-tag figma-status-tag--bound">node-id=23-524</span>
+                </div>
+              </div>
+              <div className="component-card__body" style={{ width: '100%', padding: '36px 0', display: 'flex', justifyContent: 'center', backgroundColor: '#D3D3D3', borderRadius: '12px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '28px', alignItems: 'center' }}>
+                  <Component4 variant="white">Google</Component4>
+                  <Component4 variant="yellow">Google</Component4>
+                  <Component4 variant="gray">Google</Component4>
+                </div>
+              </div>
+              <div className="component-card__spec-table">
+                <table className="spec-table-grid">
+                  <thead>
+                    <tr><th>Variant</th><th>Background Fill</th><th>Text Color / Specs (Node ID: 23:524)</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>White</td><td><code>#FFFFFF</code></td><td>Black text (<code>#000000</code>), 4-color Google G logo, 18px radius</td></tr>
+                    <tr><td>Yellow</td><td><code>#FFB800</code> (Amber)</td><td>White text (<code>#FFFFFF</code>), 4-color Google G logo, 18px radius</td></tr>
+                    <tr><td>Gray</td><td><code>#8C8C8C</code> (Slate Gray)</td><td>White text (<code>#FFFFFF</code>), 4-color Google G logo, 18px radius</td></tr>
+                    <tr><td>Elevation</td><td>Pillowy Drop Shadow</td><td><code>0 12px 28px -4px rgba(0,0,0,0.24)</code></td></tr>
                   </tbody>
                 </table>
               </div>
