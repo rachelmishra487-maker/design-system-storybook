@@ -10,3 +10,4 @@ export * from './components/Component315/Component315';
 export * from './components/DateFilters/DateFilters';
 export * from './components/Zones/Zones';
 export * from './components/Map/Map';
+export * from './components/Frame2/Frame2';

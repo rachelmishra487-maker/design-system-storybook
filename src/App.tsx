@@ -13,6 +13,8 @@ import {
   Filters,
   Zones,
   Map,
+  Frame2,
+  Frame2Group,
 } from './index';
 
 type Tab = 'overview' | 'colors' | 'foundations' | 'components';
@@ -55,7 +57,7 @@ export const App: React.FC = () => {
             </div>
             <div className="stat-pill stat-pill--components">
               <span className="stat-dot" />
-              <span>7 Figma Components Preserved</span>
+              <span>8 Figma Components Preserved</span>
             </div>
             <div className="stat-pill stat-pill--figma">
               <span className="stat-dot" />
@@ -393,6 +395,36 @@ export const App: React.FC = () => {
             
             
             
+            
+            {/* Frame 2 - Selection Pill Cards (Figma Node ID: 2:10) */}
+            <div className="component-card">
+              <div className="component-card__header">
+                <div className="component-card__title-wrap">
+                  <span className="component-card__layer-name">Frame 2 (Selection Pill Cards)</span>
+                  <span className="component-card__layer-badge">Figma Node ID: 2:10</span>
+                </div>
+                <div className="component-card__actions">
+                  <span className="figma-status-tag figma-status-tag--bound">node-id=2-10</span>
+                </div>
+              </div>
+              <div className="component-card__body" style={{ width: '100%', padding: '36px 0', display: 'flex', justifyContent: 'center', backgroundColor: '#C8CBD0', borderRadius: '12px' }}>
+                <Frame2Group />
+              </div>
+              <div className="component-card__spec-table">
+                <table className="spec-table-grid">
+                  <thead>
+                    <tr><th>State Variant</th><th>Indicator Fill &amp; Border</th><th>Card Background &amp; Typography (Node ID: 2:10)</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>State 1: Filled</td><td><code>#FFB800</code> Solid Fill (Golden Amber)</td><td>White Pill Card (<code>#FFFFFF</code>), Navy Title (<code>#0F172A</code>, 700)</td></tr>
+                    <tr><td>State 2: Outline</td><td><code>#FFFFFF</code> Fill + <code>2.5px solid #FFB800</code></td><td>White Pill Card (<code>#FFFFFF</code>), Navy Title (<code>#0F172A</code>, 700)</td></tr>
+                    <tr><td>State 3: Gray</td><td><code>#8E8E93</code> Fill + <code>2.5px solid #FFB800</code></td><td>White Pill Card (<code>#FFFFFF</code>), Navy Title (<code>#0F172A</code>, 700)</td></tr>
+                    <tr><td>Geometry</td><td>Squircle: <code>60 &times; 60px</code> (radius: <code>18px</code>)</td><td>Card: <code>480 &times; 104px</code> (radius: <code>44px</code>, gap: <code>28px</code>)</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
             {/* Component 2/Frame 18 - Location Action Buttons (Figma Node ID: 4:30) */}
             <div className="component-card">
               <div className="component-card__header">

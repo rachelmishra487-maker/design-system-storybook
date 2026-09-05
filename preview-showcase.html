@@ -324,6 +324,75 @@
     
     
     
+
+    /* Component CSS: Frame 2 - Selection Pill Cards (Figma Node ID 2:10) */
+    .uedp-frame-2 {
+      display: inline-flex;
+      align-items: center;
+      gap: 28px;
+      box-sizing: border-box;
+      background-color: #FFFFFF;
+      border-radius: 44px;
+      width: 480px;
+      max-width: 100%;
+      padding: 22px 34px;
+      user-select: none;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .uedp-frame-2__indicator {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 18px;
+      box-sizing: border-box;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+    .uedp-frame-2__indicator--filled {
+      background-color: #FFB800;
+      border: 2.5px solid #FFB800;
+    }
+    .uedp-frame-2__indicator--outline {
+      background-color: #FFFFFF;
+      border: 2.5px solid #FFB800;
+    }
+    .uedp-frame-2__indicator--gray {
+      background-color: #8E8E93;
+      border: 2.5px solid #FFB800;
+    }
+    .uedp-frame-2__title {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #0F172A;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+    .uedp-frame-2-group {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+    }
+    .uedp-frame-2-canvas-frame {
+      display: inline-flex;
+      flex-direction: column;
+      padding: 36px 44px 44px 44px;
+      background-color: #C8CBD0;
+      border-radius: 16px;
+      box-sizing: border-box;
+    }
+    .uedp-frame-2-canvas-label {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: #555A64;
+      margin-bottom: 28px;
+    }
+
     /* Component CSS: Component 2/Frame 18 (Figma Node ID 4:30) */
     .uedp-frame-18 {
       display: inline-flex;
@@ -969,6 +1038,47 @@
       
       
       
+
+      <!-- Frame 2 (Figma Node ID 2:10) -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Preserved Layer Name: "Frame 2" (Selection Pill Cards)</span>
+          <span class="node-badge">Figma Node ID: 2:10 (480 &times; 104)</span>
+        </div>
+        <div class="card-body" style="width: 100%; display: flex; justify-content: center; padding: 40px 0; background-color: #C8CBD0; border-radius: 8px;">
+          <div class="uedp-frame-2-group">
+            <!-- Variant 1: Solid Amber -->
+            <div class="uedp-frame-2">
+              <div class="uedp-frame-2__indicator uedp-frame-2__indicator--filled"></div>
+              <span class="uedp-frame-2__title">Apply to universities</span>
+            </div>
+            <!-- Variant 2: Outline Amber -->
+            <div class="uedp-frame-2">
+              <div class="uedp-frame-2__indicator uedp-frame-2__indicator--outline"></div>
+              <span class="uedp-frame-2__title">Apply to universities</span>
+            </div>
+            <!-- Variant 3: Slate Gray with Amber Border -->
+            <div class="uedp-frame-2">
+              <div class="uedp-frame-2__indicator uedp-frame-2__indicator--gray"></div>
+              <span class="uedp-frame-2__title">Apply to universities</span>
+            </div>
+          </div>
+        </div>
+        <div class="table-container" style="margin-top: 20px;">
+          <table class="spec-table">
+            <thead>
+              <tr><th>Variant</th><th>Indicator Fill &amp; Border</th><th>Typography &amp; Dimensions (Node ID: 2:10)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Variant 1 (Top)</td><td><code>#FFB800</code> Solid Fill (Golden Amber)</td><td>Navy bold ("Apply to universities", 28px / 700)</td></tr>
+              <tr><td>Variant 2 (Middle)</td><td><code>#FFFFFF</code> Fill + <code>2.5px solid #FFB800</code></td><td>Navy bold ("Apply to universities", 28px / 700)</td></tr>
+              <tr><td>Variant 3 (Bottom)</td><td><code>#8E8E93</code> (Slate Gray) + <code>2.5px solid #FFB800</code></td><td>Navy bold ("Apply to universities", 28px / 700)</td></tr>
+              <tr><td>Pill Card Dimensions</td><td><code>480 &times; 104px</code> (radius: <code>44px</code>)</td><td>Gap: <code>28px</code>, Indicator: <code>60 &times; 60px</code> (radius: <code>18px</code>)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <!-- Component 2/Frame 18 (Figma Node ID 4:30) -->
       <div class="card">
         <div class="card-header">
