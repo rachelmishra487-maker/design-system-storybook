@@ -23,6 +23,8 @@ import {
   Frame31Group,
   Card,
   CardGroup,
+  Frame34,
+  Frame34Group,
 } from './index';
 
 type Tab = 'overview' | 'colors' | 'foundations' | 'components';
@@ -65,7 +67,7 @@ export const App: React.FC = () => {
             </div>
             <div className="stat-pill stat-pill--components">
               <span className="stat-dot" />
-              <span>12 Figma Components Preserved</span>
+              <span>13 Figma Components Preserved</span>
             </div>
             <div className="stat-pill stat-pill--figma">
               <span className="stat-dot" />
@@ -546,6 +548,36 @@ export const App: React.FC = () => {
                     <tr><td>White (Top)</td><td><code>#FFFFFF</code> (Pure White)</td><td>Black Clock (<code>44px</code>), Slate Label (<code>21px</code>), Black Value (<code>32px</code>)</td></tr>
                     <tr><td>Gray (Bottom)</td><td><code>#8E8E93</code> (Slate Gray)</td><td>Black Clock (<code>44px</code>), Darker Slate Label (<code>21px</code>), Black Value (<code>32px</code>)</td></tr>
                     <tr><td>Card Dimensions</td><td><code>260 &times; 300px</code> (radius: <code>38px</code>)</td><td>Center-aligned vertical layout with soft drop shadow</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            
+            {/* Frame 34 - Course Search Pill Card (Figma Node ID: 31:521) */}
+            <div className="component-card">
+              <div className="component-card__header">
+                <div className="component-card__title-wrap">
+                  <span className="component-card__layer-name">Frame 34 (Course Search Bar Pill)</span>
+                  <span className="component-card__layer-badge">Figma Node ID: 31:521</span>
+                </div>
+                <div className="component-card__actions">
+                  <span className="figma-status-tag figma-status-tag--bound">node-id=31-521</span>
+                </div>
+              </div>
+              <div className="component-card__body" style={{ width: '100%', padding: '36px 0', display: 'flex', justifyContent: 'center', backgroundColor: '#CECECE', borderRadius: '12px' }}>
+                <Frame34Group />
+              </div>
+              <div className="component-card__spec-table">
+                <table className="spec-table-grid">
+                  <thead>
+                    <tr><th>Variant</th><th>Surface Fill</th><th>Icon &amp; Placeholder (Node ID: 31:521)</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Default (Top)</td><td><code>#FFFFFF</code> (Flat White)</td><td>Solid Black Icon (<code>28px</code>), Black Text (<code>24px / 500</code>), No shadow</td></tr>
+                    <tr><td>Gray (Middle)</td><td><code>#8E8E93</code> (Slate Gray)</td><td>Muted Charcoal Icon (<code>#545458</code>), Muted Text (<code>24px / 500</code>), No shadow</td></tr>
+                    <tr><td>Elevated (Bottom)</td><td><code>#FFFFFF</code> (Elevated White)</td><td>Solid Black Icon, Black Text, Soft drop shadow (<code>0 16px 32px rgba(0,0,0,0.22)</code>)</td></tr>
+                    <tr><td>Dimensions</td><td><code>560 &times; 76px</code> (radius: <code>24px</code>)</td><td>Leading search icon with <code>3.2px</code> stroke and rounded caps</td></tr>
                   </tbody>
                 </table>
               </div>

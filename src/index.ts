@@ -15,3 +15,4 @@ export * from './components/Frame36/Frame36';
 export * from './components/Checkbox/Checkbox';
 export * from './components/Frame31/Frame31';
 export * from './components/Card/Card';
+export * from './components/Frame34/Frame34';
