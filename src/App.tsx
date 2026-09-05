@@ -25,6 +25,8 @@ import {
   CardGroup,
   Frame34,
   Frame34Group,
+  Component9,
+  Component9Group,
 } from './index';
 
 type Tab = 'overview' | 'colors' | 'foundations' | 'components';
@@ -67,7 +69,7 @@ export const App: React.FC = () => {
             </div>
             <div className="stat-pill stat-pill--components">
               <span className="stat-dot" />
-              <span>13 Figma Components Preserved</span>
+              <span>14 Figma Components Preserved</span>
             </div>
             <div className="stat-pill stat-pill--figma">
               <span className="stat-dot" />
@@ -578,6 +580,35 @@ export const App: React.FC = () => {
                     <tr><td>Gray (Middle)</td><td><code>#8E8E93</code> (Slate Gray)</td><td>Muted Charcoal Icon (<code>#545458</code>), Muted Text (<code>24px / 500</code>), No shadow</td></tr>
                     <tr><td>Elevated (Bottom)</td><td><code>#FFFFFF</code> (Elevated White)</td><td>Solid Black Icon, Black Text, Soft drop shadow (<code>0 16px 32px rgba(0,0,0,0.22)</code>)</td></tr>
                     <tr><td>Dimensions</td><td><code>560 &times; 76px</code> (radius: <code>24px</code>)</td><td>Leading search icon with <code>3.2px</code> stroke and rounded caps</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            
+            {/* Component 9 - About the Institution Card (Figma Node ID: 29:447) */}
+            <div className="component-card">
+              <div className="component-card__header">
+                <div className="component-card__title-wrap">
+                  <span className="component-card__layer-name">Component 9 (About Institution Card)</span>
+                  <span className="component-card__layer-badge">Figma Node ID: 29:447</span>
+                </div>
+                <div className="component-card__actions">
+                  <span className="figma-status-tag figma-status-tag--bound">node-id=29-447</span>
+                </div>
+              </div>
+              <div className="component-card__body" style={{ width: '100%', padding: '36px 0', display: 'flex', justifyContent: 'center', backgroundColor: '#CECECE', borderRadius: '12px' }}>
+                <Component9Group />
+              </div>
+              <div className="component-card__spec-table">
+                <table className="spec-table-grid">
+                  <thead>
+                    <tr><th>Variant</th><th>Surface &amp; Image</th><th>Typography &amp; Action (Node ID: 29:447)</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Active (Left)</td><td><code>#FFFFFF</code> (Pure White), Full-color photo</td><td>Black Title (<code>28px / 700</code>), Slate Body (<code>15px</code>), Dark Action</td></tr>
+                    <tr><td>Inactive (Right)</td><td><code>#8E8E93</code> (Slate Gray), Dimmed photo</td><td>Muted Title (<code>#374151</code>), Muted Body, Muted Action</td></tr>
+                    <tr><td>Dimensions</td><td><code>360 &times; 500px</code> (radius: <code>36px</code>)</td><td>Campus hero header (<code>210px</code>) + Right-aligned "Read More"</td></tr>
                   </tbody>
                 </table>
               </div>
