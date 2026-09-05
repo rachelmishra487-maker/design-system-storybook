@@ -248,10 +248,10 @@ export const App: React.FC = () => {
               <div className="component-card__header">
                 <div className="component-card__title-wrap">
                   <span className="component-card__layer-name">Button</span>
-                  <span className="component-card__layer-badge">Figma Node ID: 4:30</span>
+                  <span className="component-card__layer-badge">Figma Node ID: 2:75 & 4:30</span>
                 </div>
                 <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                  {(['primary', 'secondary', 'outline', 'ghost', 'danger', 'link'] as const).map((v) => (
+                  {(['next', 'back', 'primary', 'secondary', 'outline', 'ghost', 'danger', 'link'] as const).map((v) => (
                     <button
                       key={v}
                       onClick={() => setBtnVariant(v)}
