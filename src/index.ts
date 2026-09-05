@@ -3,6 +3,7 @@ export * from './components/Button/Button';
 export * from './components/Component2/Component2';
 export * from './components/Component3/Component3';
 export * from './components/Component4/Component4';
+export * from './components/Component5/Component5';
 export * from './components/Component336/Component336';
 export * from './components/Filters/Filters';
 export * from './components/Component315/Component315';

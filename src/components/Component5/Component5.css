@@ -1,0 +1,153 @@
+﻿/* Preserved Figma Layer Name: "Component 5" (Figma Node ID: 24:551) */
+
+/* Card Base */
+.uedp-component-5 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  user-select: none;
+  overflow: hidden;
+  transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Header & Logo */
+.uedp-component-5__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.uedp-component-5__logo {
+  display: block;
+}
+
+/* Body / Custom Content */
+.uedp-component-5__body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Footer / Text Section */
+.uedp-component-5__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+/* Title: "Visa Help" */
+.uedp-component-5__title {
+  margin: 0;
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+/* Subtitle: "Instant guidance" */
+.uedp-component-5__subtitle {
+  margin: 0;
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 1.25;
+  opacity: 0.95;
+  letter-spacing: -0.01em;
+}
+
+/* Sizing Scale */
+.uedp-component-5--sm {
+  width: 240px;
+  height: 250px;
+  padding: 24px 24px 28px 24px;
+  border-radius: 42px;
+}
+.uedp-component-5--sm .uedp-component-5__title {
+  font-size: 26px;
+}
+.uedp-component-5--sm .uedp-component-5__subtitle {
+  font-size: 16px;
+}
+
+.uedp-component-5--md {
+  width: 290px;
+  height: 310px;
+  padding: 32px 32px 36px 32px;
+  border-radius: 52px; /* Generous Squircle matching Figma spec */
+}
+.uedp-component-5--md .uedp-component-5__title {
+  font-size: 32px;
+}
+.uedp-component-5--md .uedp-component-5__subtitle {
+  font-size: 20px;
+}
+
+.uedp-component-5--lg {
+  width: 350px;
+  height: 375px;
+  padding: 40px 40px 44px 40px;
+  border-radius: 62px;
+}
+.uedp-component-5--lg .uedp-component-5__title {
+  font-size: 38px;
+}
+.uedp-component-5--lg .uedp-component-5__subtitle {
+  font-size: 24px;
+}
+
+/* 1. Yellow / Amber Variant */
+.uedp-component-5--yellow {
+  background-color: #FFB800; /* Vibrant Figma Golden-Amber */
+  box-shadow: 0 4px 16px rgba(255, 184, 0, 0.2);
+}
+
+/* 2. Gray Variant */
+.uedp-component-5--gray {
+  background-color: #8E8E93; /* Figma Medium Slate-Gray */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Interactive States */
+.uedp-component-5--interactive {
+  cursor: pointer;
+}
+
+.uedp-component-5--interactive:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -6px rgba(0, 0, 0, 0.22);
+}
+
+.uedp-component-5--interactive:active {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.18);
+}
+
+.uedp-component-5--interactive:focus-visible {
+  outline: 3px solid #1434CB;
+  outline-offset: 4px;
+}
+
+/* Stack / Group Container matching Figma 2-variant set */
+.uedp-component-5-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 360px;
+  box-sizing: border-box;
+}
+
+/* Figma Canvas Frame Emulation */
+.uedp-component-5-canvas-frame {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 44px 36px;
+  background-color: #D3D3D3; /* Neutral gray canvas from Figma */
+  border-radius: 12px;
+}
