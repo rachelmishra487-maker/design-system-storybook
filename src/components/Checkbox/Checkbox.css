@@ -1,0 +1,196 @@
+﻿/* Preserved Figma Layer Name: "Checkbox" (Figma Node ID: 2:24) */
+
+/* Wrapper */
+.uedp-checkbox-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Control Element */
+.uedp-checkbox__control {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: pointer;
+  transition: background-color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.uedp-checkbox__control:hover {
+  transform: scale(1.03);
+}
+
+.uedp-checkbox__control:active {
+  transform: scale(0.97);
+}
+
+.uedp-checkbox__control:focus-visible {
+  outline: 3px solid #FFB800;
+  outline-offset: 4px;
+}
+
+/* Hidden Native Input */
+.uedp-checkbox__native-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+/* State 1: Checked (Solid Amber Fill) */
+.uedp-checkbox__control--checked {
+  background-color: #FFB800;
+  border: 2.5px solid #FFB800;
+  box-shadow: 0 4px 12px rgba(255, 184, 0, 0.22);
+}
+
+/* State 2: Unchecked (White Fill with Amber Border) */
+.uedp-checkbox__control--unchecked {
+  background-color: #FFFFFF;
+  border: 2.5px solid #FFB800;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* Sizing Scales */
+.uedp-checkbox__control--size-sm {
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  border-width: 2px;
+}
+.uedp-checkbox__control--size-sm .uedp-checkbox__icon {
+  width: 13px;
+  height: 10px;
+}
+
+.uedp-checkbox__control--size-md {
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  border-width: 2.5px;
+}
+.uedp-checkbox__control--size-md .uedp-checkbox__icon {
+  width: 28px;
+  height: 22px;
+}
+
+.uedp-checkbox__control--size-lg {
+  width: 72px;
+  height: 72px;
+  border-radius: 22px;
+  border-width: 3px;
+}
+.uedp-checkbox__control--size-lg .uedp-checkbox__icon {
+  width: 36px;
+  height: 28px;
+}
+
+/* Disabled State */
+.uedp-checkbox__control--disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Optional Checkmark Icon */
+.uedp-checkbox__icon {
+  display: block;
+  animation: uedp-checkbox-pop 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes uedp-checkbox-pop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Checkbox with Label */
+.uedp-checkbox-labeled {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.uedp-checkbox-labeled--disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.uedp-checkbox__label {
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  font-weight: 600;
+  color: #0F172A;
+  line-height: 1.3;
+}
+
+.uedp-checkbox-labeled--size-sm .uedp-checkbox__label {
+  font-size: 15px;
+  gap: 10px;
+}
+
+.uedp-checkbox-labeled--size-md .uedp-checkbox__label {
+  font-size: 20px;
+  gap: 16px;
+}
+
+.uedp-checkbox-labeled--size-lg .uedp-checkbox__label {
+  font-size: 24px;
+  gap: 20px;
+}
+
+/* Authentic Figma Canvas Artboard Container */
+.uedp-checkbox-canvas-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 36px 44px;
+  background-color: #C8CBD0;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.uedp-checkbox-canvas-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  color: #8B5CF6;
+  margin-bottom: 12px;
+  user-select: none;
+}
+
+.uedp-checkbox-canvas-badge__icon {
+  font-size: 13px;
+  line-height: 1;
+}
+
+/* Purple dashed component set boundary matching Figma */
+.uedp-checkbox-component-set {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  align-items: center;
+  padding: 44px 36px;
+  border: 2px dashed #8B5CF6;
+  border-radius: 20px;
+  box-sizing: border-box;
+  min-width: 140px;
+}

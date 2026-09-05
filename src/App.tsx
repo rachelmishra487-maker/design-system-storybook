@@ -17,6 +17,8 @@ import {
   Frame2Group,
   Frame36,
   Frame36Group,
+  Checkbox,
+  CheckboxGroup,
 } from './index';
 
 type Tab = 'overview' | 'colors' | 'foundations' | 'components';
@@ -59,7 +61,7 @@ export const App: React.FC = () => {
             </div>
             <div className="stat-pill stat-pill--components">
               <span className="stat-dot" />
-              <span>9 Figma Components Preserved</span>
+              <span>10 Figma Components Preserved</span>
             </div>
             <div className="stat-pill stat-pill--figma">
               <span className="stat-dot" />
@@ -452,6 +454,35 @@ export const App: React.FC = () => {
                     <tr><td>Gray (Middle)</td><td><code>#8E8E93</code> (Slate Gray)</td><td>Muted Charcoal text &amp; chevron (<code>#5A5A5E</code>), No shadow</td></tr>
                     <tr><td>Elevated (Bottom)</td><td><code>#FFFFFF</code> (Elevated White)</td><td>Solid Black text &amp; chevron, Prominent drop shadow (<code>0 14px 28px rgba(0,0,0,0.24)</code>)</td></tr>
                     <tr><td>Geometry</td><td>Squircle Card: <code>280 &times; 68px</code></td><td>Corner radius: <code>20px</code>, Chevron stroke: <code>3.2px</code></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            
+            {/* Checkbox - Squircle Component Set (Figma Node ID: 2:24) */}
+            <div className="component-card">
+              <div className="component-card__header">
+                <div className="component-card__title-wrap">
+                  <span className="component-card__layer-name">Checkbox (Squircle Component Set)</span>
+                  <span className="component-card__layer-badge">Figma Node ID: 2:24</span>
+                </div>
+                <div className="component-card__actions">
+                  <span className="figma-status-tag figma-status-tag--bound">node-id=2-24</span>
+                </div>
+              </div>
+              <div className="component-card__body" style={{ width: '100%', padding: '36px 0', display: 'flex', justifyContent: 'center', backgroundColor: '#C8CBD0', borderRadius: '12px' }}>
+                <CheckboxGroup />
+              </div>
+              <div className="component-card__spec-table">
+                <table className="spec-table-grid">
+                  <thead>
+                    <tr><th>State Variant</th><th>Fill &amp; Border</th><th>Visual Styling (Node ID: 2:24)</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>State 1: Checked (Top)</td><td><code>#FFB800</code> Solid Fill (Golden Amber)</td><td>Squircle indicator (<code>60 &times; 60px</code>, radius: <code>18px</code>)</td></tr>
+                    <tr><td>State 2: Unchecked (Bottom)</td><td><code>#FFFFFF</code> Fill + <code>2.5px solid #FFB800</code></td><td>Squircle outline (<code>60 &times; 60px</code>, radius: <code>18px</code>)</td></tr>
+                    <tr><td>Integration</td><td>Standalone &amp; Frame 2 Indicator</td><td>Also serves as the left indicator inside Frame 2</td></tr>
                   </tbody>
                 </table>
               </div>

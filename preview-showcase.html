@@ -326,6 +326,66 @@
     
 
 
+
+    /* Component CSS: Checkbox - Squircle Component Set (Figma Node ID 2:24) */
+    .uedp-checkbox__control {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      user-select: none;
+      cursor: pointer;
+      width: 60px;
+      height: 60px;
+      border-radius: 18px;
+      transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .uedp-checkbox__control:hover {
+      transform: scale(1.03);
+    }
+    .uedp-checkbox__control--checked {
+      background-color: #FFB800;
+      border: 2.5px solid #FFB800;
+      box-shadow: 0 4px 12px rgba(255, 184, 0, 0.22);
+    }
+    .uedp-checkbox__control--unchecked {
+      background-color: #FFFFFF;
+      border: 2.5px solid #FFB800;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+    .uedp-checkbox-canvas-container {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 36px 44px;
+      background-color: #C8CBD0;
+      border-radius: 16px;
+      box-sizing: border-box;
+    }
+    .uedp-checkbox-canvas-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #8B5CF6;
+      margin-bottom: 12px;
+      user-select: none;
+    }
+    .uedp-checkbox-component-set {
+      display: flex;
+      flex-direction: column;
+      gap: 52px;
+      align-items: center;
+      padding: 44px 36px;
+      border: 2px dashed #8B5CF6;
+      border-radius: 20px;
+      box-sizing: border-box;
+      min-width: 130px;
+    }
+
     /* Component CSS: Frame 36 - Select Field Component Set (Figma Node ID 31:558) */
     .uedp-frame-36-wrapper {
       position: relative;
@@ -1119,6 +1179,41 @@
       
       
 
+
+
+      <!-- Checkbox (Figma Node ID 2:24) -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Preserved Layer Name: "Checkbox" (Squircle Component Set)</span>
+          <span class="node-badge">Figma Node ID: 2:24 (60 &times; 60)</span>
+        </div>
+        <div class="card-body" style="width: 100%; display: flex; justify-content: center; padding: 40px 0; background-color: #C8CBD0; border-radius: 8px;">
+          <div class="uedp-checkbox-canvas-container">
+            <div class="uedp-checkbox-canvas-badge">
+              <span>&#10070;</span>
+              <span>Checkbox</span>
+            </div>
+            <div class="uedp-checkbox-component-set">
+              <!-- State 1: Checked (Top) -->
+              <div class="uedp-checkbox__control uedp-checkbox__control--checked"></div>
+              <!-- State 2: Unchecked (Bottom) -->
+              <div class="uedp-checkbox__control uedp-checkbox__control--unchecked"></div>
+            </div>
+          </div>
+        </div>
+        <div class="table-container" style="margin-top: 20px;">
+          <table class="spec-table">
+            <thead>
+              <tr><th>State Variant</th><th>Fill &amp; Border</th><th>Visual Styling (Node ID: 2:24)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>State 1: Checked (Top)</td><td><code>#FFB800</code> Solid Fill (Golden Amber)</td><td>Squircle indicator (<code>60 &times; 60px</code>, radius: <code>18px</code>)</td></tr>
+              <tr><td>State 2: Unchecked (Bottom)</td><td><code>#FFFFFF</code> Fill + <code>2.5px solid #FFB800</code></td><td>Squircle outline (<code>60 &times; 60px</code>, radius: <code>18px</code>)</td></tr>
+              <tr><td>Integration</td><td>Standalone &amp; Frame 2 Indicator</td><td>Directly powers the selection indicator inside Frame 2</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
       <!-- Frame 36 (Figma Node ID 31:558) -->
       <div class="card">

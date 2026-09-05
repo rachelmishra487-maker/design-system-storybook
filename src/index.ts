@@ -12,3 +12,4 @@ export * from './components/Zones/Zones';
 export * from './components/Map/Map';
 export * from './components/Frame2/Frame2';
 export * from './components/Frame36/Frame36';
+export * from './components/Checkbox/Checkbox';
