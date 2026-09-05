@@ -1,0 +1,161 @@
+﻿/* Preserved Figma Layer Name: "Component 3" (Figma Node ID: 0:1) */
+
+.uedp-component-3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 620px;
+  padding: 32px 32px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Central Continuous Horizontal Track Line */
+.uedp-component-3__track {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background-color: #000000;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.uedp-component-3--with-overhang .uedp-component-3__track {
+  left: 0;
+  right: 0;
+}
+
+/* Steps Nodes Layout Container */
+.uedp-component-3__steps {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 56px);
+}
+
+.uedp-component-3__step-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Step Circle Base */
+.uedp-component-3__circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--uedp-fontFamily-sans, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  font-weight: 700;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease, background-color 0.2s ease;
+  cursor: default;
+  user-select: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  position: relative;
+}
+
+/* Size Variants */
+.uedp-component-3--size-sm .uedp-component-3__circle {
+  width: 42px;
+  height: 42px;
+  font-size: 17px;
+}
+
+.uedp-component-3--size-md .uedp-component-3__circle {
+  width: 56px;
+  height: 56px;
+  font-size: 22px;
+}
+
+.uedp-component-3--size-lg .uedp-component-3__circle {
+  width: 68px;
+  height: 68px;
+  font-size: 26px;
+}
+
+/* Number Typography */
+.uedp-component-3__number {
+  display: block;
+  line-height: 1;
+  transform: translateY(-0.5px);
+}
+
+/* Status States */
+
+/* Step 1: Completed State (Vibrant Figma Golden-Amber) */
+.uedp-component-3__circle--completed {
+  background-color: #FFB800;
+  color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Step 2: Active State (Vibrant Figma Coral-Orange with Translucent Halo) */
+.uedp-component-3__circle--active {
+  background-color: #FF5722;
+  color: #FFFFFF;
+  box-shadow: 0 0 0 7px rgba(255, 87, 34, 0.28);
+}
+
+/* Steps 3 & 4: Upcoming State (Clean Figma Off-White / Soft Slate with Dark Number) */
+.uedp-component-3__circle--upcoming {
+  background-color: #EEF2F6;
+  color: #0F172A;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+/* Disabled State */
+.uedp-component-3__circle--disabled {
+  background-color: #E2E8F0;
+  color: #94A3B8;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Interactive States */
+.uedp-component-3__circle--interactive {
+  cursor: pointer;
+}
+
+.uedp-component-3__circle--interactive:hover {
+  transform: scale(1.08);
+}
+
+.uedp-component-3__circle--interactive:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 3px;
+}
+
+/* Optional Step Labels */
+.uedp-component-3__label {
+  position: absolute;
+  top: calc(100% + 10px);
+  font-family: var(--uedp-fontFamily-sans, 'Inter', sans-serif);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+  color: #64748B;
+  transition: color 0.2s ease;
+}
+
+.uedp-component-3__label--completed {
+  color: #B45309;
+}
+
+.uedp-component-3__label--active {
+  color: #EA580C;
+  font-weight: 700;
+}
+
+.uedp-component-3__label--upcoming {
+  color: #64748B;
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import {
   Button,
+  Component3,
   Component336,
   Component315,
   DateFilters,
@@ -380,6 +381,37 @@ export const App: React.FC = () => {
                     <tr><td>Border Default</td><td><code>--uedp-neutral-200</code> (#e5e5e5)</td><td>VariableID:137:1021</td></tr>
                     <tr><td>Metric Value Color</td><td><code>--uedp-neutral-950</code> (#0a0a0a)</td><td>VariableID:137:1029</td></tr>
                     <tr><td>Brand Accent Top</td><td><code>--uedp-orange-600</code></td><td>VariableID:137:1240</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            
+            {/* Component 3 - Stepper (Figma Node ID: 0:1) */}
+            <div className="component-card">
+              <div className="component-card__header">
+                <div className="component-card__title-wrap">
+                  <span className="component-card__layer-name">Component 3 (Progress Stepper)</span>
+                  <span className="component-card__layer-badge">Figma Node ID: 0:1</span>
+                </div>
+                <div className="component-card__actions">
+                  <span className="figma-status-tag figma-status-tag--bound">node-id=0-1</span>
+                </div>
+              </div>
+              <div className="component-card__body" style={{ width: '100%', padding: '24px 0', display: 'flex', justifyContent: 'center' }}>
+                <Component3 currentStep={2} totalSteps={4} />
+              </div>
+              <div className="component-card__spec-table">
+                <table className="spec-table-grid">
+                  <thead>
+                    <tr><th>Element</th><th>CSS Value / Token</th><th>Figma Spec (Node ID: 0:1)</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Track Line</td><td><code>#000000</code> (height: 2px)</td><td>Continuous horizontal baseline with overhangs</td></tr>
+                    <tr><td>Step 1 (Completed)</td><td><code>#FFB800</code> (Amber)</td><td>Solid circle with white bold "1"</td></tr>
+                    <tr><td>Step 2 (Active)</td><td><code>#FF5722</code> (Coral Orange)</td><td>Solid circle with white bold "2" + translucent halo ring</td></tr>
+                    <tr><td>Steps 3 & 4 (Upcoming)</td><td><code>#EEF2F6</code> (Soft Slate)</td><td>Solid circle with dark slate bold numbers</td></tr>
+                    <tr><td>Circle Dimensions</td><td>56px &times; 56px (radius: 50%)</td><td>Centered vertically over track line</td></tr>
                   </tbody>
                 </table>
               </div>

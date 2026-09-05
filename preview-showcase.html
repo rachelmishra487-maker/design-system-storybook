@@ -296,6 +296,77 @@
     }
     .uedp-btn-link:hover { text-decoration: underline; color: var(--uedp-orange-700, #c2410c); }
 
+    
+    /* Component CSS: Component 3 (Figma Node ID 0:1) */
+    .uedp-component-3 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 620px;
+      padding: 32px 32px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    .uedp-component-3__track {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #000000;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+    .uedp-component-3__steps {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: calc(100% - 56px);
+    }
+    .uedp-component-3__step-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .uedp-component-3__circle {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease;
+    }
+    .uedp-component-3__circle:hover {
+      transform: scale(1.08);
+    }
+    .uedp-component-3__circle--completed {
+      background-color: #FFB800;
+      color: #FFFFFF;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+    .uedp-component-3__circle--active {
+      background-color: #FF5722;
+      color: #FFFFFF;
+      box-shadow: 0 0 0 7px rgba(255, 87, 34, 0.28);
+    }
+    .uedp-component-3__circle--upcoming {
+      background-color: #EEF2F6;
+      color: #0F172A;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    }
+
     /* Component CSS: Component 336 / Card (Figma Node ID 32:580) */
     .uedp-c336 {
       background-color: var(--uedp-base-white, #ffffff);
@@ -697,6 +768,56 @@
               <tr><td>Border Radius (md)</td><td><code>--uedp-border-radius-rounded-md</code> (6px)</td><td><code>VariableID:137:1551</code></td></tr>
               <tr><td>Gap (md)</td><td><code>--uedp-gap-2</code> (8px)</td><td><code>VariableID:137:1558</code></td></tr>
               <tr><td>Disabled Opacity</td><td><code>--uedp-opacity-50</code> (0.5)</td><td><code>VariableID:137:1575</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      
+      <!-- Component 3 / Stepper (Figma Node ID 0:1) -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Preserved Layer Name: "Component 3" (Progress Stepper)</span>
+          <span class="node-badge">Figma Node ID: 0:1</span>
+        </div>
+        <div class="card-body" style="width: 100%; display: flex; justify-content: center; padding: 24px 0;">
+          <div class="uedp-component-3 uedp-component-3--with-overhang">
+            <div class="uedp-component-3__track" aria-hidden="true"></div>
+            <div class="uedp-component-3__steps">
+              <div class="uedp-component-3__step-node">
+                <button type="button" class="uedp-component-3__circle uedp-component-3__circle--completed">
+                  <span>1</span>
+                </button>
+              </div>
+              <div class="uedp-component-3__step-node">
+                <button type="button" class="uedp-component-3__circle uedp-component-3__circle--active">
+                  <span>2</span>
+                </button>
+              </div>
+              <div class="uedp-component-3__step-node">
+                <button type="button" class="uedp-component-3__circle uedp-component-3__circle--upcoming">
+                  <span>3</span>
+                </button>
+              </div>
+              <div class="uedp-component-3__step-node">
+                <button type="button" class="uedp-component-3__circle uedp-component-3__circle--upcoming">
+                  <span>4</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-container" style="margin-top: 20px;">
+          <table class="spec-table">
+            <thead>
+              <tr><th>Element</th><th>CSS Value / Token</th><th>Figma Spec (Node ID: 0:1)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Track Line</td><td><code>#000000</code> (height: 2px)</td><td>Continuous horizontal baseline with overhangs</td></tr>
+              <tr><td>Step 1 (Completed)</td><td><code>#FFB800</code> (Amber)</td><td>Solid circle with white bold "1"</td></tr>
+              <tr><td>Step 2 (Active)</td><td><code>#FF5722</code> (Coral Orange)</td><td>Solid circle with white bold "2" + translucent halo ring</td></tr>
+              <tr><td>Steps 3 & 4 (Upcoming)</td><td><code>#EEF2F6</code> (Soft Slate)</td><td>Solid circle with dark slate bold numbers</td></tr>
+              <tr><td>Circle Dimensions</td><td>56px &times; 56px (radius: 50%)</td><td>Centered vertically over track line</td></tr>
             </tbody>
           </table>
         </div>
